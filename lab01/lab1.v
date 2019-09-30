@@ -1,19 +1,19 @@
 module RG(
     clk ,
     rst ,
-	sw  ,
+    sw  ,
     led4_b, led4_g, led4_r, led5_b, led5_g, led5_r
     );
 
 input   clk ,
 input   rst ,
-input   [1:0] sw    ,
-output reg    	led4_b, 
-				led4_g, 
-				led4_r, 
-				led5_b, 
-				led5_g, 
-				led5_r;
+input   [1:0] sw ,
+output reg 	led4_b, 
+		led4_g, 
+		led4_r, 
+		led5_b, 
+		led5_g, 
+		led5_r;
 reg [4:0] count;
 reg [2:0] st, nxt_st;
 parameter RR = 3'b000, GR = 3'b001, YR = 3'b010, RG = 3'b011, RY = 3'b100;
@@ -27,7 +27,7 @@ end
 
 always@(*)begin
 	case( st )
-		RR:	begin
+		RR:begin
 			if( count == 1 )
 				nxt_st = GR;
 			else if( count == 8 )
