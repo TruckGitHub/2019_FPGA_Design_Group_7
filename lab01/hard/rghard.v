@@ -33,6 +33,56 @@ always@(posedge clk)begin
 		st <= nxt_st;
 end
 
+always@(*)begin
+	if( sw == 2'b00 )begin
+		case( st )
+			dark: begin
+				nxt_st = RR1;
+			end
+			RR1:begin
+				if( count == time_r )
+					nxt_st = GR;
+				else 
+					nxt_st = st;
+			end
+			GR: begin
+				if( count == time_g )
+					nxt_st = YR;
+				else 
+					nxt_st = st;
+			end
+			YR: begin
+				if( count == time_y )
+					nxt_st = RR2;
+				else 
+					nxt_st = st;
+			end
+			RR2:begin
+				if( count == time_r )
+					nxt_st = RG;
+				else 
+					nxt_st = st;
+			end
+			RG: begin
+				if( count == time_g)
+					nxt_st = RY;
+				else
+					nxt_st = st;
+			end
+			default: begin
+				if( count ==  time_y )
+					nxt_st = RR1;
+				else 
+					nxt_st = st;
+			end
+		endcase
+	end
+	
+	else
+		nxt_st = dark;
+end	
+	
+	
 always@( posedge clk )begin
     case( add_ss )
         2'b00:
@@ -100,9 +150,9 @@ always@( posedge clk)begin
 end
 
 always@(*)begin
-			time_y = add_y - sub_y;
-			time_g = add_g - sub_g;
-			time_r = add_r - sub_r;
+	time_y = add_y - sub_y;
+	time_g = add_g - sub_g;
+	time_r = add_r - sub_r;
 end
     
 
@@ -123,54 +173,7 @@ always@(*)begin
 	endcase
 end	
 
-always@(*)begin
-	if( sw == 2'b00 )begin
-		case( st )
-			dark: begin
-				nxt_st = RR1;
-			end
-			RR1:begin
-				if( count == time_r )
-					nxt_st = GR;
-				else 
-					nxt_st = st;
-			end
-			GR: begin
-				if( count == time_g )
-					nxt_st = YR;
-				else 
-					nxt_st = st;
-			end
-			YR: begin
-				if( count == time_y )
-					nxt_st = RR2;
-				else 
-					nxt_st = st;
-			end
-			RR2:begin
-				if( count == time_r )
-					nxt_st = RG;
-				else 
-					nxt_st = st;
-			end
-			RG: begin
-				if( count == time_g)
-					nxt_st = RY;
-				else
-					nxt_st = st;
-			end
-			default: begin
-				if( count ==  time_y )
-					nxt_st = RR1;
-				else 
-					nxt_st = st;
-			end
-		endcase
-	end
-	
-	else
-		nxt_st = dark;
-end
+
 
 always@(*)begin
 	case( st )
@@ -234,47 +237,47 @@ always@(*)begin
 end
 	
 always@(posedge clk)begin
-		if( rst)
+	if( rst)
+		count <= 0;
+	else if( st == RR1  )begin
+		if( count == time_r  )
 			count <= 0;
-		else if( st == RR1  )begin
-			if( count == time_r  )
-				count <= 0;
-			else
-				count <= count +1;
-			end
-		else if( st == RR2  )begin
-			if( count == time_r  )
-				count <= 0;
-			else
-				count <= count +1;
-			end
-		else if( st == GR  )begin
-			if( count == time_g  )
-				count <= 0;
-			else
-				count <= count +1;
-			end
-		else if( st == YR  )begin
-			if( count == time_y  )
-				count <= 0;
-			else
-				count <= count +1;
-			end
-
-		else if( st == RG  )begin
-			if( count == time_g  )
-				count <= 0;
-			else
-				count <= count +1;
-			end
-		else if( st == RY  )begin
-			if( count == time_y  )
-				count <= 0;
-			else
-				count <= count +1;
-			end
 		else
+			count <= count +1;
+		end
+	else if( st == RR2  )begin
+		if( count == time_r  )
 			count <= 0;
+		else
+			count <= count +1;
+		end
+	else if( st == GR  )begin
+		if( count == time_g  )
+			count <= 0;
+		else
+			count <= count +1;
+		end
+	else if( st == YR  )begin
+		if( count == time_y  )
+			count <= 0;
+		else
+			count <= count +1;
+		end
+
+	else if( st == RG  )begin
+		if( count == time_g  )
+			count <= 0;
+		else
+			count <= count +1;
+		end
+	else if( st == RY  )begin
+		if( count == time_y  )
+			count <= 0;
+		else
+			count <= count +1;
+		end
+	else
+		count <= 0;
 
 end
     
