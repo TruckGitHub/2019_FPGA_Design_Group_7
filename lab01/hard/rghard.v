@@ -1,8 +1,8 @@
 module RG(
     clk ,
     rst,
-	sw  ,
-	btn ,
+    sw  ,
+    btn ,
     led4_b, led4_g, led4_r, led5_b, led5_g, led5_r,
     led
     );
@@ -12,11 +12,11 @@ input   clk;
 input   rst;
 input   [1:0] sw;  
 output reg  led4_b, 
-			led4_g, 
-			led4_r, 
-			led5_b, 
-			led5_g, 
-			led5_r;
+	    led4_g, 
+	    led4_r, 
+	    led5_b, 
+	    led5_g, 
+	    led5_r;
 output reg [3:0]led;
 reg [1:0] add_ss, sub_ss;
 reg [6:0] count;
