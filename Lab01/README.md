@@ -8,18 +8,9 @@
 有狀態RR1及RR2是因為:在兩個LED皆為紅燈的情況下，下個狀態切換成綠燈的燈是不同顆。
 
 而dark這個狀態，是為了應對設計進階題的時，當switch切換到00以外就要暗掉的情況；同時switch在切回00時，狀態機回到dark，讓系統可以重新跑紅綠燈的流程。
-```flow
-st=>start: dark
+![](https://i.imgur.com/90wTMGg.png)
 
-op=>operation: RR1
-op2=>operation: GR
-op3=>operation: YR
-op4=>operation: RR2
-op5=>operation: RG
-op6=>operation: RY
 
-st->op->op2->op3->op4->op5->op6->op
-```
 :::warning
 :zap:流程途中，只要switch有變動，狀態便會回到dark，直到switch變00狀態機才會進行
 :::
