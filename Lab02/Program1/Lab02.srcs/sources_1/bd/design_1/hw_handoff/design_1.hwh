@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Oct 13 16:16:43 2019" VIVADOVERSION="2018.3">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="tul.com.tw:pynq-z2:part0:1.0" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RGB_LED_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RGB_LED_0" PORT="rst"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="R_out" SIGIS="undef" SIGNAME="RGB_LED_0_R_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RGB_LED_0" PORT="R_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="G_out" SIGIS="undef" SIGNAME="RGB_LED_0_G_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RGB_LED_0" PORT="G_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="B_out" SIGIS="undef" SIGNAME="RGB_LED_0_B_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RGB_LED_0" PORT="B_out"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="2" FULLNAME="/PWM_Decoder_0" HWVERSION="1.0" INSTANCE="PWM_Decoder_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="PWM_Decoder" VLNV="xilinx.com:user:PWM_Decoder:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_PWM_Decoder_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="2" NAME="cur_st" RIGHT="0" SIGIS="undef" SIGNAME="RGB_LED_0_cur_st">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RGB_LED_0" PORT="cur_st"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="R_time_out" RIGHT="0" SIGIS="undef" SIGNAME="PWM_Decoder_0_R_time_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RGB_LED_0" PORT="R_time_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="G_time_out" RIGHT="0" SIGIS="undef" SIGNAME="PWM_Decoder_0_G_time_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RGB_LED_0" PORT="G_time_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="B_time_out" RIGHT="0" SIGIS="undef" SIGNAME="PWM_Decoder_0_B_time_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RGB_LED_0" PORT="B_time_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/RGB_LED_0" HWVERSION="1.0" INSTANCE="RGB_LED_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="RGB_LED" VLNV="xilinx.com:user:RGB_LED:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="red" VALUE="&quot;000&quot;"/>
+        <PARAMETER NAME="orange" VALUE="&quot;001&quot;"/>
+        <PARAMETER NAME="yellow" VALUE="&quot;010&quot;"/>
+        <PARAMETER NAME="green" VALUE="&quot;011&quot;"/>
+        <PARAMETER NAME="blue" VALUE="&quot;100&quot;"/>
+        <PARAMETER NAME="indigo" VALUE="&quot;101&quot;"/>
+        <PARAMETER NAME="purple" VALUE="&quot;110&quot;"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_RGB_LED_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="R_time_in" RIGHT="0" SIGIS="undef" SIGNAME="PWM_Decoder_0_R_time_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PWM_Decoder_0" PORT="R_time_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="G_time_in" RIGHT="0" SIGIS="undef" SIGNAME="PWM_Decoder_0_G_time_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PWM_Decoder_0" PORT="G_time_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="B_time_in" RIGHT="0" SIGIS="undef" SIGNAME="PWM_Decoder_0_B_time_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PWM_Decoder_0" PORT="B_time_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="R_out" SIGIS="undef" SIGNAME="RGB_LED_0_R_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="R_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="G_out" SIGIS="undef" SIGNAME="RGB_LED_0_G_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="G_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="B_out" SIGIS="undef" SIGNAME="RGB_LED_0_B_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="B_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="cur_st" RIGHT="0" SIGIS="undef" SIGNAME="RGB_LED_0_cur_st">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PWM_Decoder_0" PORT="cur_st"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>
