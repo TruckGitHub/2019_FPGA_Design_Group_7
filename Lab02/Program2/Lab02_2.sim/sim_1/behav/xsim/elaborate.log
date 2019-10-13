@@ -1,0 +1,13 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fa2da929df68450caa7c4b78b68dcb70 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Breathing_LED_behav xil_defaultlib.Breathing_LED xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/FPGA/Lab02_2/Lab02_2.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Breathing_LED
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Breathing_LED_behav

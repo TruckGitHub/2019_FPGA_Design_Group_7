@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Oct 13 18:11:04 2019
+# Process ID: 22132
+# Current directory: D:/FPGA/Lab02_2/Lab02_2.runs/impl_1
+# Command line: vivado.exe -log Breathing_LED.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Breathing_LED.tcl -notrace
+# Log file: D:/FPGA/Lab02_2/Lab02_2.runs/impl_1/Breathing_LED.vdi
+# Journal file: D:/FPGA/Lab02_2/Lab02_2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Breathing_LED.tcl -notrace

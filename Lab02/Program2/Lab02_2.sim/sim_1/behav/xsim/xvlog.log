@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Breathing_LED.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Breathing_LED
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Lab02_2/Lab02_2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
