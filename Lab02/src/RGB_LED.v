@@ -7,15 +7,14 @@
 	output			R_out,
 	output			G_out,
 	output			B_out,
-	output  [2:0]   color
+	output reg[2:0] cur_st
 );
 
+reg [2:0] nxt_st;
+
 wire	[7:0]	next_counter_256;
-
 reg		[7:0]	counter_256;
-reg     [1:0]   time_counter;
-
-reg [2:0] cur_st,nxt_st;
+reg     [19:0]  time_counter;
 
 
 parameter   red=3'd0,
@@ -26,30 +25,26 @@ parameter   red=3'd0,
 			indigo=3'd5,
 			purple=3'd6;
 
-assign			next_counter_256 = (counter_256 == 8'd255)? 8'd0 : counter_256 + 8'd1;	//400KHz
+assign		next_counter_256 = (counter_256 == 8'd255)? 8'd0 : counter_256 + 8'd1;	//400KHz
 
-assign			R_out = (counter_256 < R_time_in)? 1'd1 : 1'd0;
-assign			G_out = (counter_256 < G_time_in)? 1'd1 : 1'd0;
-assign			B_out = (counter_256 < B_time_in)? 1'd1 : 1'd0;
+assign		R_out = (counter_256 < R_time_in)? 1'd1 : 1'd0;
+assign		G_out = (counter_256 < G_time_in)? 1'd1 : 1'd0;
+assign		B_out = (counter_256 < B_time_in)? 1'd1 : 1'd0;
 
 always @(posedge clk or posedge rst)
 begin
 	if(rst)
-	begin
 		counter_256	<= 8'd0;
-	end
 	else
-	begin
 		counter_256	<= next_counter_256;
-	end
 end
 
 always @(posedge clk or posedge rst)
 begin
 	if(rst)
-		time_counter<= 2'd0;
-	else if(time_counter==2'd2)
-		time_counter<=2'd0;
+		time_counter<= 20'd0;
+	else if(time_counter==20'd1000000)
+		time_counter<=20'd0;
 	else if(counter_256==8'd255)
 		time_counter<= time_counter+1;
 end
@@ -67,44 +62,44 @@ always@(*)
 begin
 	case(cur_st)
 		red:
-			if(time_counter==2'd2)
+			if(time_counter==20'd1000000)
 				nxt_st=orange;
 			else
 				nxt_st=red;
 		orange:
-			if(time_counter==2'd2)
+			if(time_counter==20'd1000000)
 				nxt_st=yellow;
 			else
 				nxt_st=orange;		
 		yellow:
-			if(time_counter==2'd2)
+			if(time_counter==20'd1000000)
 				nxt_st=green;
 			else
 				nxt_st=yellow;	
 
 		green:
-			if(time_counter==2'd2)
+			if(time_counter==20'd1000000)
 				nxt_st=blue;
 			else
 				nxt_st=green;	
 		blue:
-			if(time_counter==2'd2)
+			if(time_counter==20'd1000000)
 				nxt_st=indigo;
 			else
 				nxt_st=blue;	
 		indigo:
-			if(time_counter==2'd2)
+			if(time_counter==20'd1000000)
 				nxt_st=purple;
 			else
 				nxt_st=indigo;	
 		default:
-			if(time_counter==2'd2)
+			if(time_counter==20'd1000000)
 				nxt_st=red;
 			else
-				nxt_st=indigo;	
+				nxt_st=purple;	
 	endcase
 end
 
-assign color=cur_st;
+
 
 endmodule
