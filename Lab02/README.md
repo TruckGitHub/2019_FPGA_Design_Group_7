@@ -58,7 +58,9 @@ begin
 end
 ```
 ### 運作原理
-顏色的控制主要看R_time_in、G_time_in、B_time_in的大小，透過狀態變換更改這個參數，time_in/256對應Duty Cycle = Ton/cycle (%)，產生需求的顏色；同時上圖狀態機，有個time_counter的參數，目的是要調控各色的時間。下圖是PWM的顏色設定。
+顏色的控制主要看R_time_in、G_time_in、B_time_in的大小，透過狀態變換更改這個參數，<br> 
+time_in/256對應Duty Cycle = Ton/cycle (%)，產生需求的顏色；<br> 
+同時上圖狀態機，有個time_counter的參數，目的是要調控各色的時間。下圖是PWM的顏色設定。
 
 
 :mega: **time_counter**
