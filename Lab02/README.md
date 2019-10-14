@@ -60,13 +60,13 @@ end
 ### 運作原理
 顏色的控制主要看R_time_in、G_time_in、B_time_in的大小，透過狀態變換更改這個參數，time_in/256對應Duty Cycle = Ton/cycle (%)，產生需求的顏色；同時上圖狀態機，有個time_counter的參數，目的是要調控各色的時間。下圖是PWM的顏色設定。
 
-`
+
 :mega: **time_counter**
 
  >一個cycle時間為 $1/400khz =2.5\times 10^{-6}s$,
  故選擇**time_counter**達20'd1000000時換下個狀態，
  換句話說，一個狀態持續$2.5\times 10^{-6}s\times10^6=2.5s$
-`
+
 
 
 ```verilog
@@ -139,6 +139,6 @@ assign	B_out = (counter_256 < B_time_in)? 1'd1 : 1'd0;
 ```
 而B_time_in會隨狀態ASCENT及DESCENT不同，分別持續增加或持續減少，影響一個周期內訊號為high的長短，而有不同亮度，達到呼吸燈的效果。
 
-:::warning
+
 :zap:本題我們沒有包成IP，直接純寫 Verilog code 來實作
-:::
+
