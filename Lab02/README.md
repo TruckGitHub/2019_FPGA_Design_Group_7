@@ -142,5 +142,6 @@ assign	B_out = (counter_256 < B_time_in)? 1'd1 : 1'd0;
 而B_time_in會隨狀態ASCENT及DESCENT不同，分別持續增加或持續減少，影響一個周期內訊號為high的長短，而有不同亮度，達到呼吸燈的效果。
 
 
-:zap:本題我們沒有包成IP，直接純寫 Verilog code 來實作
+:zap:
+>本題我們沒有包成IP，直接純寫 Verilog code 來實作
 
