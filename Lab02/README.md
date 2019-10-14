@@ -65,9 +65,9 @@ time_in/256對應Duty Cycle = Ton/cycle (%)，產生需求的顏色；<br>
 
 :mega: **time_counter**
 
-> 一個cycle時間為 1/400khz =2.5*10^-6^s，<br>
+> 一個cycle時間為 1/400khz =2.5x10^(-6)s，<br>
 故選擇 `time_counter`達20'd1000000時換下個狀態，<br> 
-換句話說，一個狀態持續2.5*10^(-6)s*10^6=2.5s
+換句話說，一個狀態持續2.5x10^(-6)sx10^6=2.5s
 
 
 
