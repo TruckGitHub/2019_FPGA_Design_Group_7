@@ -40,8 +40,8 @@ int main(void)
 void delay (int delay_1, int delay_0, XGpio *LED) {		
 		XGpio_DiscreteWrite(LED, 1, 1);
 		for (int i = 0; i < delay_1; i++);
-        XGpio_DiscreteWrite(LED, 1, 0);
-        for (int i = 0; i < delay_0; i++);
+		XGpio_DiscreteWrite(LED, 1, 0);
+		for (int i = 0; i < delay_0; i++);
 
 }
 ```
