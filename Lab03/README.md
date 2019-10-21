@@ -9,7 +9,7 @@ FPGA-based System Design - Lab03 HW
 
 > 先宣告 short int 0x2345，
 再使用一個 char pointer 檢查第一個 byte 存 0x23 or 0x45
-```c=
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
