@@ -4,6 +4,7 @@
 int main(void)
 {
     short int a = 0x2345;
+    //p 指向 a中第一個byte的地址
     char *p = (char *)&a;
 
     printf("p=%#hhx\n",*p);
