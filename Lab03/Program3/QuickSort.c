@@ -21,10 +21,8 @@ void QuickSort(int A[], int left, int right){
 }
 
 int main() {
-	int num[20];
-	for(int i=0;i<20;i++){
-		num[i]=0;
-	}
+	int num[20]={0};
+	
 	
 	for(int i=0;i<20;i++){
 		printf("plz input : ");
