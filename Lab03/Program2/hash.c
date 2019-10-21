@@ -9,7 +9,7 @@ XGpio SW_Gpio;
 
 unsigned int BKDRHash(char *str)	//HASH FUNCTION
 {
-    unsigned int seed = 31;
+    unsigned int seed = 31; //乘以一個係數，對字符間的差距放大
     unsigned int hash = 0;
     while(*str)
     {

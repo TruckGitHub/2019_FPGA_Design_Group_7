@@ -11,7 +11,7 @@ void QuickSort(int A[], int left, int right){
             while(A[++i] < s);  // start from head
             while(A[--j] > s);  // start from tail
             if(i >= j) break;
-               Temp = A[i];
+               Temp = A[i]; // 將比Pivot大的數值換到右邊，比Pivot小的數值換到左邊
                A[i] = A[j];
                A[j] = Temp;
         }
