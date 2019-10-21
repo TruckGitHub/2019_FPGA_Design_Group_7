@@ -30,12 +30,12 @@ int main() {
 		printf("plz input : ");
 		scanf("%d",&num[i]);
 		printf("\n");
-		for(int j=0;j<=i;j++)
+		for(int j=0;j<=i;j++)     //更新輸入的數字於Terminal上
 			printf("%d ",num[j]);
 		printf("\n");
 	}
 	
-	QuickSort(num, 0, 19);
+	QuickSort(num, 0, 19); //進行QuickSort，並輸出結果
 	printf("Result: ");
 	for(int x=0;x<20;x++){
 		printf("%d ",num[x]);
