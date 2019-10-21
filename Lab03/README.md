@@ -36,7 +36,7 @@ int main(void)
 
 ## Program 1 - 使用 AXI GPIO - 控制 RGB LED
 利用下圖delay函式去模擬pwm，參數delay_1為LED訊號為HIGH的時間；delay_0則為LOW.
-```c=21
+```c
 void delay (int delay_1, int delay_0, XGpio *LED) {		
 		XGpio_DiscreteWrite(LED, 1, 1);
 		for (int i = 0; i < delay_1; i++);
@@ -48,7 +48,7 @@ void delay (int delay_1, int delay_0, XGpio *LED) {
 以YELLOW(=R+G)為例，於for迴圈內，使LED_R_Gpio、LED_G_Gpio常亮；
 藍色不須混合，則LED_B_Gpio以**for迴圈不做事255次**取代，加此**for不做事迴圈**，目的是為了讓七個顏色亮的時間一致。
 
-```c=76
+```c
 for (int Delay = 0; Delay < LED_DELAY; Delay++){	//YELLOW
 	delay(255,0,&LED_R_Gpio);
 	delay(255,0,&LED_G_Gpio);
@@ -61,7 +61,7 @@ for (int Delay = 0; Delay < LED_DELAY; Delay++){	//YELLOW
 ## Program 2 - Hash Function 
 採用BKDR Hash Function
 >seed目的為**對字符間的差距放大**
-```c=10
+```c
 unsigned int BKDRHash(char *str)	//HASH FUNCTION
 {
     unsigned int seed = 31; //乘以一個係數，對字符間的差距放大
