@@ -7,19 +7,25 @@
 #define LED_B_ID  XPAR_GPIO_2_DEVICE_ID
 #define LED_G_ID  XPAR_GPIO_3_DEVICE_ID
 
-#define LED_DELAY     100000
+#define LED_DELAY   100000
 
 
 XGpio LED_R_Gpio, LED_G_Gpio, LED_B_Gpio, SW_Gpio;
 
-void delay (int delay_1, int delay_0, XGpio *LED) {		//simulate PWM
 
+/*
+ Simulate PWM
+ delay_1為訊號為high的時間;
+ delay_0為訊號為low的時間
+*/
+void delay (int delay_1, int delay_0, XGpio *LED) {		
 		XGpio_DiscreteWrite(LED, 1, 1);
 		for (int i = 0; i < delay_1; i++);
         XGpio_DiscreteWrite(LED, 1, 0);
         for (int i = 0; i < delay_0; i++);
 
 }
+
 int main() {
 	int LED_R_Status, LED_G_Status, LED_B_Status, SW_Status;
 
@@ -42,6 +48,7 @@ int main() {
 			xil_printf("Gpio Initialization Failed\r\n");
 			return XST_FAILURE;
 		}
+		
 	/* Set the direction for all signals as inputs except the LED output */
 	XGpio_SetDataDirection(&LED_R_Gpio, 1, 0x00);
 	XGpio_SetDataDirection(&LED_G_Gpio, 1, 0x00);
