@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1570968636">
   <File Type="PA-TCL" Name="Breathing_LED.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Breathing_LED_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Breathing_LED_reports.tcl"/>
   <File Type="RDS-RDS" Name="Breathing_LED.vds"/>
   <File Type="RDS-UTIL" Name="Breathing_LED_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Breathing_LED_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Breathing_LED.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Breathing_LED_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Breathing_LED_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../Breathing_LED.v">
+    <File Path="$PPRDIR/../../../../../FPGA/Breathing_LED.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -26,13 +23,13 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../RGB_LED_ooc.xdc">
+    <File Path="$PPRDIR/../../../../../FPGA/RGB_LED_ooc.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../pynq-z2_v1.0.xdc">
+    <File Path="$PPRDIR/../../../../../FPGA/pynq-z2_v1.0.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -49,9 +46,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

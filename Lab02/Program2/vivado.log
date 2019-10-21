@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Oct 21 20:10:52 2019
+# Process ID: 25316
+# Current directory: D:/Github/FPGA/2019_FPGA_Design_Group_7/Lab02/Program2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5808 D:\Github\FPGA\2019_FPGA_Design_Group_7\Lab02\Program2\Lab02_2.xpr
+# Log file: D:/Github/FPGA/2019_FPGA_Design_Group_7/Lab02/Program2/vivado.log
+# Journal file: D:/Github/FPGA/2019_FPGA_Design_Group_7/Lab02/Program2\vivado.jou
+#-----------------------------------------------------------
+sstart_guiopen_project D:/Github/FPGA/2019_FPGA_Design_Group_7/Lab02/Program2/Lab02_2.xpr
+IINFO: [Project 1-313] Project file moved from 'D:/FPGA/Lab02_2' since last save.WWARNING: [Project 1-312] File not found as 'D:/Github/FPGA/2019_FPGA_Design_Group_7/Lab02/Breathing_LED.v'; using path 'D:/FPGA/Breathing_LED.v' instead.WARNING: [Project 1-312] File not found as 'D:/Github/FPGA/2019_FPGA_Design_Group_7/Lab02/RGB_LED_ooc.xdc'; using path 'D:/FPGA/RGB_LED_ooc.xdc' instead.
+WARNING: [Project 1-312] File not found as 'D:/Github/FPGA/2019_FPGA_Design_Group_7/Lab02/pynq-z2_v1.0.xdc'; using path 'D:/FPGA/pynq-z2_v1.0.xdc' instead.
+Scanning sources...
+Finished scanning sources
+WWARNING: [Project 1-312] File not found as 'D:/Github/FPGA/2019_FPGA_Design_Group_7/Lab02/Breathing_LED.v'; using path 'D:/FPGA/Breathing_LED.v' instead.WWARNING: [Project 1-312] File not found as 'D:/Github/FPGA/2019_FPGA_Design_Group_7/Lab02/RGB_LED_ooc.xdc'; using path 'D:/FPGA/RGB_LED_ooc.xdc' instead.WWARNING: [Project 1-312] File not found as 'D:/Github/FPGA/2019_FPGA_Design_Group_7/Lab02/pynq-z2_v1.0.xdc'; using path 'D:/FPGA/pynq-z2_v1.0.xdc' instead.WARNING: [Project 1-312] File not found as 'D:/Github/FPGA/2019_FPGA_Design_Group_7/Lab02/Breathing_LED.v'; using path 'D:/FPGA/Breathing_LED.v' instead.
+WARNING: [Project 1-312] File not found as 'D:/Github/FPGA/2019_FPGA_Design_Group_7/Lab02/RGB_LED_ooc.xdc'; using path 'D:/FPGA/RGB_LED_ooc.xdc' instead.
+WARNING: [Project 1-312] File not found as 'D:/Github/FPGA/2019_FPGA_Design_Group_7/Lab02/pynq-z2_v1.0.xdc'; using path 'D:/FPGA/pynq-z2_v1.0.xdc' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/software/Vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:35 ; elapsed = 00:00:25 . Memory (MB): peak = 760.066 ; gain = 165.629
+uupdate_compile_order -fileset sources_1exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 21 20:13:26 2019...
+
