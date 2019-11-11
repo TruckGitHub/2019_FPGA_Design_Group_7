@@ -1,0 +1,15 @@
+C:/Users/USER/Documents/FPGA/hw4/hw4.srcs/insertion.v {1 {vlog -work work -vopt C:/Users/USER/Documents/FPGA/hw4/hw4.srcs/insertion.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module sorting
+
+Top level modules:
+	sorting
+
+} {} {}} C:/Users/USER/Documents/FPGA/hw4/hw4.srcs/testbench.v {1 {vlog -work work -vopt C:/Users/USER/Documents/FPGA/hw4/hw4.srcs/testbench.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module sort_test
+
+Top level modules:
+	sort_test
+
+} {} {}}
