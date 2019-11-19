@@ -2,10 +2,10 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Oct 21 20:13:34 2019
-# Process ID: 26980
+# Start of session at: Tue Nov 19 18:30:08 2019
+# Process ID: 23124
 # Current directory: D:/Github/FPGA/2019_FPGA_Design_Group_7/Lab02/Program1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13728 D:\Github\FPGA\2019_FPGA_Design_Group_7\Lab02\Program1\Lab02.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22064 D:\Github\FPGA\2019_FPGA_Design_Group_7\Lab02\Program1\Lab02.xpr
 # Log file: D:/Github/FPGA/2019_FPGA_Design_Group_7/Lab02/Program1/vivado.log
 # Journal file: D:/Github/FPGA/2019_FPGA_Design_Group_7/Lab02/Program1\vivado.jou
 #-----------------------------------------------------------
@@ -16,13 +16,17 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Github/FPGA/2019_FPGA_Design_Group_7/Lab02/PWM_Decoder'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Github/FPGA/2019_FPGA_Design_Group_7/Lab02/RGB_LED'.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/software/Vivado/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 724.734 ; gain = 115.387
-update_compile_order -fileset sources_1
-open_bd_design {D:/Github/FPGA/2019_FPGA_Design_Group_7/Lab02/Program1/Lab02.srcs/sources_1/bd/design_1/design_1.bd}
-Adding cell -- xilinx.com:user:PWM_Decoder:1.0 - PWM_Decoder_0
-Adding cell -- xilinx.com:user:RGB_LED:1.0 - RGB_LED_0
-Successfully read diagram <design_1> from BD file <D:/Github/FPGA/2019_FPGA_Design_Group_7/Lab02/Program1/Lab02.srcs/sources_1/bd/design_1/design_1.bd>
-open_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 867.895 ; gain = 51.008
+ERROR: [BD 41-69] Error sourcing TCL script: 
+    while executing
+"namespace eval ::xilinx.com_ip_aximm_1.0 { source -notrace {D:/software/Vivado/Vivado/2018.3/data/rsb/busdef/AXIMM/busdef.tcl} }"
+ERROR: [BD 41-69] Error sourcing TCL script: 
+    while executing
+"source -notrace {D:/software/Vivado/Vivado/2018.3/data/rsb/busdef/clock_signal/busdef.tcl} "
+    (in namespace eval "::xilinx.com_ip_clock_signal_1.0" script line 1)
+    invoked from within
+"namespace eval ::xilinx.com_ip_clock_signal_1.0 { source -notrace {D:/software/Vivado/Vivado/2018.3/data/rsb/busdef/clock_signal/busdef.tcl} }"
+INFO: [Common 17-344] 'open_project' was cancelled
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Oct 21 20:27:01 2019...
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 19 18:31:28 2019...
