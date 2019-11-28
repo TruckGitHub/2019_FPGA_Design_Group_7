@@ -1,0 +1,1824 @@
+!SESSION 2019-11-25 13:42:21.544 -----------------------------------------------
+eclipse.buildId=2018.3
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_TW
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:/FPGA/HW5/HW5.sdk
+
+This is a continuation of log file D:\FPGA\HW5\HW5.sdk\.metadata\.bak_4.log
+Created Time: 2019-11-28 22:15:03.657
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:03.664
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-209
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:03.698
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-209
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:03.706
+!MESSAGE XSCT Command: [stop], Thread: Worker-209
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:03.730
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-209
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:03.736
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-209
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:04.354
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-209
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:04.359
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-209
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:04.376
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-209
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:04.381
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-209
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:04.423
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-209
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:04.430
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-209
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:04.477
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-209
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:04.483
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-209
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:04.520
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-209
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:04.527
+!MESSAGE XSCT Command: [dow D:/FPGA/HW5/HW5.sdk/HW5/Debug/HW5.elf], Thread: Worker-209
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:04.865
+!MESSAGE XSCT command with result: [dow D:/FPGA/HW5/HW5.sdk/HW5/Debug/HW5.elf], Result: [null, ]. Thread: Worker-209
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:04.871
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-209
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:04.884
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-209
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:04.893
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-209
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:04.922
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-209
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:04.927
+!MESSAGE XSCT Command: [con], Thread: Worker-209
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:04.965
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-209
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:04.975
+!MESSAGE XSCT Command: [disconnect tcfchan#39], Thread: Thread-2614
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:15:04.988
+!MESSAGE XSCT command with result: [disconnect tcfchan#39], Result: [null, ]. Thread: Thread-2614
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.333
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.343
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#40]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.348
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.374
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.379
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.390
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.395
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.418
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.424
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.466
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.471
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.503
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.508
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.515
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#40]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.519
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.535
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.540
+!MESSAGE XSCT Command: [version -server], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.547
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.3]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.553
+!MESSAGE XSCT Command: [version], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.559
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2018.3
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.567
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.579
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.584
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.608
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.616
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.633
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.638
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.665
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.670
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.682
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.687
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.709
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.715
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.727
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.732
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.757
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.764
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.777
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.783
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.806
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.811
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.826
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.832
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.853
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.860
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.884
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.889
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.895
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.901
+!MESSAGE XSCT Command: [source D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.913
+!MESSAGE XSCT command with result: [source D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.918
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.949
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.954
+!MESSAGE XSCT Command: [loadhw -hw D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.971
+!MESSAGE XSCT command with result: [loadhw -hw D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper_25]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.977
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.985
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:33.990
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:34.020
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:34.026
+!MESSAGE XSCT Command: [stop], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:34.056
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:34.062
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:34.497
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:34.506
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:34.524
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:34.529
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:34.557
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:34.563
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:34.617
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:34.623
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:34.655
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:34.665
+!MESSAGE XSCT Command: [dow D:/FPGA/HW5/HW5.sdk/HW5/Debug/HW5.elf], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:34.996
+!MESSAGE XSCT command with result: [dow D:/FPGA/HW5/HW5.sdk/HW5/Debug/HW5.elf], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:35.002
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:35.008
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:35.018
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:35.047
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:35.053
+!MESSAGE XSCT Command: [con], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:35.087
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:35.096
+!MESSAGE XSCT Command: [disconnect tcfchan#40], Thread: Thread-2695
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:22:35.105
+!MESSAGE XSCT command with result: [disconnect tcfchan#40], Result: [null, ]. Thread: Thread-2695
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.109
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.118
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#41]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.124
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.141
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.149
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.160
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.165
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.187
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.194
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.234
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1], Result: [null, ]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.239
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.271
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.277
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.282
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#41]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.287
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.302
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.307
+!MESSAGE XSCT Command: [version -server], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.314
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.3]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.319
+!MESSAGE XSCT Command: [version], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.325
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2018.3
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.333
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.346
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.353
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.376
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.381
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.396
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.404
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.429
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.435
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.447
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.451
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.474
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.481
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.493
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.498
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.521
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.527
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.540
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.547
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.570
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.575
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.589
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.595
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.617
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.622
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.650
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Result: [null, ]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.656
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.664
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.669
+!MESSAGE XSCT Command: [source D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.683
+!MESSAGE XSCT command with result: [source D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.689
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.723
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.729
+!MESSAGE XSCT Command: [loadhw -hw D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.745
+!MESSAGE XSCT command with result: [loadhw -hw D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper_25]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.758
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.770
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.775
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.810
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.816
+!MESSAGE XSCT Command: [stop], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.841
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:23.847
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:24.357
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:24.363
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:24.396
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:24.401
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:24.437
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:24.443
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:24.492
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:24.499
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:24.541
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:24.549
+!MESSAGE XSCT Command: [dow D:/FPGA/HW5/HW5.sdk/HW5/Debug/HW5.elf], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:24.882
+!MESSAGE XSCT command with result: [dow D:/FPGA/HW5/HW5.sdk/HW5/Debug/HW5.elf], Result: [null, ]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:24.890
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:24.902
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:24.916
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:24.953
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:24.959
+!MESSAGE XSCT Command: [con], Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:25.000
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-213
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:25.017
+!MESSAGE XSCT Command: [disconnect tcfchan#41], Thread: Thread-2767
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:25:25.034
+!MESSAGE XSCT command with result: [disconnect tcfchan#41], Result: [null, ]. Thread: Thread-2767
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.377
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.388
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#42]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.395
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.420
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.429
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.449
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.454
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.482
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.488
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.520
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.526
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.571
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.579
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.588
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#42]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.596
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.612
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.620
+!MESSAGE XSCT Command: [version -server], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.626
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.3]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.638
+!MESSAGE XSCT Command: [version], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.646
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2018.3
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.651
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.663
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.669
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.693
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.701
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.713
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.717
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.741
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.748
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.762
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.769
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.790
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.796
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.809
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.814
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.838
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.843
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.855
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.862
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.885
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.890
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.902
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.907
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.928
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.933
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.955
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.962
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.967
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.972
+!MESSAGE XSCT Command: [source D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.983
+!MESSAGE XSCT command with result: [source D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:02.988
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:03.025
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:03.030
+!MESSAGE XSCT Command: [loadhw -hw D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:03.056
+!MESSAGE XSCT command with result: [loadhw -hw D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper_25]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:03.065
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:03.075
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:03.084
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:03.131
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:03.139
+!MESSAGE XSCT Command: [stop], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:03.188
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:03.198
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:03.797
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:03.806
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:03.833
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:03.842
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:03.882
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:03.888
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:03.933
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:03.943
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:03.995
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:04.000
+!MESSAGE XSCT Command: [dow D:/FPGA/HW5/HW5.sdk/HW5/Debug/HW5.elf], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:04.340
+!MESSAGE XSCT command with result: [dow D:/FPGA/HW5/HW5.sdk/HW5/Debug/HW5.elf], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:04.349
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:04.360
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:04.371
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:04.411
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:04.419
+!MESSAGE XSCT Command: [con], Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:04.467
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-211
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:04.481
+!MESSAGE XSCT Command: [disconnect tcfchan#42], Thread: Thread-2808
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:26:04.496
+!MESSAGE XSCT command with result: [disconnect tcfchan#42], Result: [null, ]. Thread: Thread-2808
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:08.831
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:08.841
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#43]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:08.846
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:08.866
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:08.872
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:08.886
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:08.892
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:08.916
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:08.921
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:08.955
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:08.960
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:08.980
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:08.985
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:08.991
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#43]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:08.996
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.009
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.015
+!MESSAGE XSCT Command: [version -server], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.022
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.3]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.026
+!MESSAGE XSCT Command: [version], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.032
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2018.3
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.038
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.052
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.058
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.083
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.088
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.105
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.110
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.136
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.142
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.158
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.163
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.186
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.193
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.204
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.209
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.231
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.236
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.251
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.257
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.280
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.285
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.300
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.306
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.328
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.334
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.361
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.367
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.373
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.379
+!MESSAGE XSCT Command: [source D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.387
+!MESSAGE XSCT command with result: [source D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.391
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.421
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.426
+!MESSAGE XSCT Command: [loadhw -hw D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.450
+!MESSAGE XSCT command with result: [loadhw -hw D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper_25]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.455
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.466
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.473
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.509
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.516
+!MESSAGE XSCT Command: [stop], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.542
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:09.548
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:10.092
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:10.099
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:10.128
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:10.134
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:10.173
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:10.181
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:10.227
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:10.236
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:10.271
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:10.277
+!MESSAGE XSCT Command: [dow D:/FPGA/HW5/HW5.sdk/HW5/Debug/HW5.elf], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:10.621
+!MESSAGE XSCT command with result: [dow D:/FPGA/HW5/HW5.sdk/HW5/Debug/HW5.elf], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:10.626
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:10.635
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:10.647
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:10.691
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:10.696
+!MESSAGE XSCT Command: [con], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:10.729
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:10.744
+!MESSAGE XSCT Command: [disconnect tcfchan#43], Thread: Thread-2896
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:31:10.755
+!MESSAGE XSCT command with result: [disconnect tcfchan#43], Result: [null, ]. Thread: Thread-2896
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.110
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.128
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#44]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.139
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.162
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.166
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.177
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.182
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.205
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.212
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.246
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1], Result: [null, ]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.254
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.292
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.297
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.302
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#44]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.308
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.322
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.327
+!MESSAGE XSCT Command: [version -server], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.334
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.3]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.342
+!MESSAGE XSCT Command: [version], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.348
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2018.3
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.354
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.367
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.374
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.400
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.406
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.422
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.429
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.454
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.461
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.475
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.483
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.513
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.519
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.531
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.537
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.564
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.571
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.587
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.593
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.618
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.625
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.638
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.646
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.667
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.673
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.696
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Result: [null, ]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.702
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.711
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.716
+!MESSAGE XSCT Command: [source D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.728
+!MESSAGE XSCT command with result: [source D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.735
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.761
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.768
+!MESSAGE XSCT Command: [loadhw -hw D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.786
+!MESSAGE XSCT command with result: [loadhw -hw D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper_25]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.793
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.802
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.812
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.862
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.867
+!MESSAGE XSCT Command: [stop], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.900
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:49.905
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:50.431
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:50.436
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:50.451
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:50.456
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:50.488
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:50.493
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:50.555
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:50.560
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:50.604
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:50.610
+!MESSAGE XSCT Command: [dow D:/FPGA/HW5/HW5.sdk/HW5/Debug/HW5.elf], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:50.942
+!MESSAGE XSCT command with result: [dow D:/FPGA/HW5/HW5.sdk/HW5/Debug/HW5.elf], Result: [null, ]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:50.947
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:50.958
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:50.967
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:50.997
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:51.003
+!MESSAGE XSCT Command: [con], Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:51.041
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-210
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:51.050
+!MESSAGE XSCT Command: [disconnect tcfchan#44], Thread: Thread-2959
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:32:51.059
+!MESSAGE XSCT command with result: [disconnect tcfchan#44], Result: [null, ]. Thread: Thread-2959
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.159
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.171
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#45]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.179
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.197
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.202
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.217
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.223
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.246
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.252
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.289
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1], Result: [null, ]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.294
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.332
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.339
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.346
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#45]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.352
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.364
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.369
+!MESSAGE XSCT Command: [version -server], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.378
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.3]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.385
+!MESSAGE XSCT Command: [version], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.393
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2018.3
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.401
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.417
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.424
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.452
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.463
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.478
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.483
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.510
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.515
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.532
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.538
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.567
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.572
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.586
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.591
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.616
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.622
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.635
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.641
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.664
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.670
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.684
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.689
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.713
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.718
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.742
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Result: [null, ]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.748
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.754
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.759
+!MESSAGE XSCT Command: [source D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.765
+!MESSAGE XSCT command with result: [source D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.772
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.803
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.810
+!MESSAGE XSCT Command: [loadhw -hw D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.825
+!MESSAGE XSCT command with result: [loadhw -hw D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper_25]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.831
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.841
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.851
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.892
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.898
+!MESSAGE XSCT Command: [stop], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.932
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:08.939
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:09.468
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:09.472
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:09.488
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:09.493
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:09.532
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:09.539
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:09.586
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:09.590
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:09.630
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:09.636
+!MESSAGE XSCT Command: [dow D:/FPGA/HW5/HW5.sdk/HW5/Debug/HW5.elf], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:09.977
+!MESSAGE XSCT command with result: [dow D:/FPGA/HW5/HW5.sdk/HW5/Debug/HW5.elf], Result: [null, ]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:09.982
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:09.988
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:09.997
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:10.026
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:10.031
+!MESSAGE XSCT Command: [con], Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:10.067
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:10.076
+!MESSAGE XSCT Command: [disconnect tcfchan#45], Thread: Thread-3004
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:10.084
+!MESSAGE XSCT command with result: [disconnect tcfchan#45], Result: [null, ]. Thread: Thread-3004
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.694
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.706
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#46]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.711
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.730
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.737
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.749
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.754
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.779
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.784
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.825
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.834
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.864
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.869
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.875
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#46]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.883
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.896
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.903
+!MESSAGE XSCT Command: [version -server], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.912
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.3]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.921
+!MESSAGE XSCT Command: [version], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.930
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2018.3
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.938
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.951
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.957
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.985
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:40.992
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.005
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.010
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.033
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.038
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.051
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.056
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.080
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.087
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.100
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.105
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.129
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.135
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.147
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.153
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.188
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.196
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.209
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx TUL 1234-tulA]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.214
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.239
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.244
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.277
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.288
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.302
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.309
+!MESSAGE XSCT Command: [source D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.325
+!MESSAGE XSCT command with result: [source D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.332
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.368
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.376
+!MESSAGE XSCT Command: [loadhw -hw D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.396
+!MESSAGE XSCT command with result: [loadhw -hw D:/FPGA/HW5/HW5.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper_25]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.404
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.411
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.417
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.451
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.457
+!MESSAGE XSCT Command: [stop], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.479
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:41.485
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:42.071
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:42.076
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:42.093
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:42.098
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:42.130
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:42.136
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:42.181
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:42.186
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:42.223
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:42.230
+!MESSAGE XSCT Command: [dow D:/FPGA/HW5/HW5.sdk/HW5/Debug/HW5.elf], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:42.563
+!MESSAGE XSCT command with result: [dow D:/FPGA/HW5/HW5.sdk/HW5/Debug/HW5.elf], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:42.569
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:42.575
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:42.586
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:42.616
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:42.622
+!MESSAGE XSCT Command: [con], Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:42.655
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-207
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:42.665
+!MESSAGE XSCT Command: [disconnect tcfchan#46], Thread: Thread-3052
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-11-28 22:33:42.672
+!MESSAGE XSCT command with result: [disconnect tcfchan#46], Result: [null, ]. Thread: Thread-3052

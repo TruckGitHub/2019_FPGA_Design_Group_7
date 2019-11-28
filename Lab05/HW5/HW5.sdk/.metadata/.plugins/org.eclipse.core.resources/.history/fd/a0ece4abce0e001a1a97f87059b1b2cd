@@ -1,0 +1,92 @@
+#include "contral.h"
+#include <stdio.h>
+#include "xil_printf.h"
+#include "xil_io.h"
+#include "xparameters.h"
+
+void write_data(u32 address, u32 data);
+u32 read_data(u32 address);
+
+int main()
+{
+	u32 operator;
+	u32 A, B, C, D, a, b, c, d;
+		
+		printf("(0: add, 1: sub, 2: mul, 3: det, 4: trans)\r\n");
+		printf("Please enter the number:");
+		scanf("%d", &operator);
+		printf("%d\r\n", operator);
+		
+		
+		CONTRAL_mWriteReg(XPAR_CONTRAL_0_S00_AXI_BASEADDR, 8,3);
+		printf("%d\n\r", CONTRAL_mReadReg(XPAR_CONTRAL_0_S00_AXI_BASEADDR,8));	
+		
+		if(operator >= 0 && operator <= 4){
+			write_data(0, operator);
+
+			printf("Please enter the first 2x2 matrix(value:-128~127):");
+			printf("\r\n");
+			scanf("%d", &A);
+			printf("%d ", A);
+			write_data(1, A);
+
+			scanf("%d", &B);
+			printf("%d\r\n", B);
+			write_data(2, B);
+
+			scanf("%d", &C);
+			printf("%d ", C);
+			write_data(3, C);
+
+			scanf("%d", &D);
+			printf("%d\r\n", D);
+			write_data(4, D);
+
+			if(operator == 0 || operator == 1 || operator == 2){
+				printf("Please enter the second 2x2 matrix(value:-128~127):");
+				printf("\r\n");
+				scanf("%d", &a);
+				printf("%d ", a);
+				write_data(5, a);
+
+				scanf("%d", &b);
+				printf("%d\r\n", b);
+				write_data(6, b);
+
+				scanf("%d", &c);
+				printf("%d ", c);
+				write_data(7, c);
+
+				scanf("%d", &d);
+				printf("%d\r\n", d);
+				write_data(8, d);
+			}
+		}
+		  printf("%d ", 		read_data(1));
+			printf("%d\r\n", 	read_data(2));
+			printf("%d ", 		read_data(3));
+			printf("%d\r\n",	read_data(4));  
+		    
+		CONTRAL_mWriteReg(XPAR_CONTRAL_0_S00_AXI_BASEADDR, 4,3);
+		printf("%d\n\r", CONTRAL_mReadReg(XPAR_CONTRAL_0_S00_AXI_BASEADDR,4));	
+			
+		if(operator == 0 || operator == 1 || operator == 2 || operator == 4){
+			printf("result matrix is(value:-128~127):\r\n");
+			printf("%d ", 		read_data(255));
+			printf("%d\r\n", 	read_data(254));
+			printf("%d ", 		read_data(253));
+			printf("%d\r\n",	read_data(252));
+		}
+		else if(operator == 3){
+			printf("determinant is %d  (value:-128~127)\r\n", read_data(255));
+		}
+
+		
+		else{
+			printf("wrong operation!\r\n\r\n");
+		}
+
+	
+
+    return 0;
+}

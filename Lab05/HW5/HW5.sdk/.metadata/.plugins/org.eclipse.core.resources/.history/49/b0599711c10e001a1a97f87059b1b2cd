@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include "xil_printf.h"
+#include "contral.h"
+#include "xparameters.h"
+
+
+int main()
+{
+	u32	data;
+
+    print("Hello World\n\r");
+
+    write_data(0x00000001, 0x00000011);
+    write_data(0x00000002, 0x00000024);
+    write_data(0x00000003, 0x00000009);
+
+    data = read_data(0x00000002);
+    printf("ADDR : 2, Data = %d\n\r", data);
+
+    data = read_data(0x00000003);
+    printf("ADDR : 3, Data = %d\n\r", data);
+
+    data = read_data(0x00000001);
+    printf("ADDR : 1, Data = %d\n\r", data);
+
+    return 0;
+}

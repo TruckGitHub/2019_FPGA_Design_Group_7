@@ -1,0 +1,488 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Nov 28 21:44:49 2019
+| Host         : DESKTOP-PRBRFBN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mux_interface_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_mux_interface_0_0 (xilinx.com:user:mux_interface:1.0) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+Parameter 'ps_2' is no longer present on the upgraded IP 'design_1_mux_interface_0_0', and cannot be set to '"011"'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:user:mux_interface:1.0 -user_name design_1_mux_interface_0_0
+set_property -dict "\
+  CONFIG.Component_Name {design_1_mux_interface_0_0} \
+  CONFIG.clk.ASSOCIATED_BUSIF {} \
+  CONFIG.clk.ASSOCIATED_RESET {rst} \
+  CONFIG.clk.CLK_DOMAIN {design_1_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.clk.FREQ_HZ {1e+08} \
+  CONFIG.clk.INSERT_VIP {0} \
+  CONFIG.clk.PHASE {0.000} \
+  CONFIG.idle {"000"} \
+  CONFIG.pl {"010"} \
+  CONFIG.ps_1 {"001"} \
+  CONFIG.rst.INSERT_VIP {0} \
+  CONFIG.rst.POLARITY {ACTIVE_LOW} " [get_ips design_1_mux_interface_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Nov 28 19:57:17 2019
+| Host         : DESKTOP-PRBRFBN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_matrix_processor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_matrix_processor_0_0 (xilinx.com:user:matrix_processor:1.0) from (Rev. 13) to (Rev. 15)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Nov 28 19:29:53 2019
+| Host         : DESKTOP-PRBRFBN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_matrix_processor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_matrix_processor_0_0 (xilinx.com:user:matrix_processor:1.0) from (Rev. 11) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Nov 27 22:54:29 2019
+| Host         : DESKTOP-PRBRFBN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_matrix_processor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_matrix_processor_0_0 (xilinx.com:user:matrix_processor:1.0) from (Rev. 10) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Nov 27 21:26:55 2019
+| Host         : DESKTOP-PRBRFBN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_matrix_processor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_matrix_processor_0_0 (xilinx.com:user:matrix_processor:1.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Nov 27 21:26:55 2019
+| Host         : DESKTOP-PRBRFBN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_contral_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_contral_0_0 (xilinx.com:user:contral:1.0 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Nov 25 21:11:36 2019
+| Host         : DESKTOP-PRBRFBN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_matrix_processor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_matrix_processor_0_0 (xilinx.com:user:matrix_processor:1.0) from (Rev. 8) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Nov 25 16:25:49 2019
+| Host         : DESKTOP-PRBRFBN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_matrix_processor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_matrix_processor_0_0 (xilinx.com:user:matrix_processor:1.0) from (Rev. 7) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Nov 25 16:06:39 2019
+| Host         : DESKTOP-PRBRFBN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_matrix_processor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_matrix_processor_0_0 (xilinx.com:user:matrix_processor:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Nov 25 15:25:28 2019
+| Host         : DESKTOP-PRBRFBN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_matrix_processor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_matrix_processor_0_0 (xilinx.com:user:matrix_processor:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Nov 25 14:50:08 2019
+| Host         : DESKTOP-PRBRFBN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_matrix_processor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_matrix_processor_0_0 (xilinx.com:user:matrix_processor:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Nov 25 01:16:43 2019
+| Host         : DESKTOP-PRBRFBN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_matrix_processor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_matrix_processor_0_0 (xilinx.com:user:matrix_processor:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Nov 25 00:53:19 2019
+| Host         : DESKTOP-PRBRFBN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_contral_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_contral_0_0 (xilinx.com:user:contral:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Nov 25 00:36:13 2019
+| Host         : DESKTOP-PRBRFBN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_contral_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_contral_0_0 (xilinx.com:user:contral:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Nov 25 00:34:33 2019
+| Host         : DESKTOP-PRBRFBN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_contral_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_contral_0_0 (xilinx.com:user:contral:1.0 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Nov 25 00:08:08 2019
+| Host         : DESKTOP-PRBRFBN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_contral_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_contral_0_0 (xilinx.com:user:contral:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Nov 25 00:07:29 2019
+| Host         : DESKTOP-PRBRFBN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_contral_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_contral_0_0 (xilinx.com:user:contral:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Nov 24 20:50:17 2019
+| Host         : DESKTOP-PRBRFBN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mem256X8_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_mem256X8_0_0 (xilinx.com:user:mem256X8:1.0) from (Rev. 6) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Nov 24 20:46:24 2019
+| Host         : DESKTOP-PRBRFBN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mem256X8_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_mem256X8_0_0 (xilinx.com:user:mem256X8:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Nov 24 20:44:44 2019
+| Host         : DESKTOP-PRBRFBN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mem256X8_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_mem256X8_0_0 (xilinx.com:user:mem256X8:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Nov 24 20:29:00 2019
+| Host         : DESKTOP-PRBRFBN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_contral_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_contral_0_0 (xilinx.com:user:contral:1.0) from (Rev. 1) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_contral_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'address'
+
+-Upgrade has added port 'data_in_to_mem'
+
+-Upgrade has added port 'data_out'
+
+-Upgrade has added port 'pl_start'
+
+-Upgrade has added port 'write_enable'
+
+

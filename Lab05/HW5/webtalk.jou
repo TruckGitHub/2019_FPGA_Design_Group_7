@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Nov 28 21:41:43 2019
+# Process ID: 26028
+# Current directory: d:/FPGA/HW5
+# Command line: wbtcv.exe -mode batch -source d:/fpga/hw5/hw5.tmp/contral_v1_0_project/contral_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: d:/FPGA/HW5/webtalk.log
+# Journal file: d:/FPGA/HW5\webtalk.jou
+#-----------------------------------------------------------
+source d:/fpga/hw5/hw5.tmp/contral_v1_0_project/contral_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
