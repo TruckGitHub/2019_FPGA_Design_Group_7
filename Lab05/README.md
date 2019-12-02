@@ -9,9 +9,10 @@ FPGA-based System Design - Lab05 HW
 ![](https://i.imgur.com/q9aSMJY.jpg)
 
 ## 設計說明
-2*2矩陣內，每個值皆8bits,使用者可自行輸入-128~127之值，但若乘加後超過此區間即溢位。
+2*2矩陣內，每個值皆8bits，使用者可自行輸入-128~127之值，但若乘加後超過此區間即溢位。
 
-![](https://i.imgur.com/kwu9HKL.png)
+![](https://i.imgur.com/NCFP7Kt.png)
+
 
 
 
@@ -38,7 +39,7 @@ FPGA-based System Design - Lab05 HW
 
 
 
-## 完成功能
+## 結果顯示
 * addation
 ![](https://i.imgur.com/ZdcuAV6.jpg)
 
