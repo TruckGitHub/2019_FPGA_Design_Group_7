@@ -41,19 +41,19 @@ FPGA-based System Design - Lab05 HW
 
 ## 結果顯示
 * addation
-![](https://i.imgur.com/ZdcuAV6.jpg)
+>![](https://i.imgur.com/ZdcuAV6.jpg)
 
 * Subtraction
-![](https://i.imgur.com/FfozKpt.jpg)
+>![](https://i.imgur.com/FfozKpt.jpg)
 
 * multiplication
-![](https://i.imgur.com/qJvputu.jpg)
+>![](https://i.imgur.com/qJvputu.jpg)
 
 * Determinant
-![](https://i.imgur.com/Im6SpKt.jpg)
+>![](https://i.imgur.com/Im6SpKt.jpg)
 
 * transpose
-![](https://i.imgur.com/xqaxNyw.jpg)
+>![](https://i.imgur.com/xqaxNyw.jpg)
 
 
 
