@@ -1,0 +1,102 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Dec 18 22:48:38 2019
+| Host         : LAPTOP-SOMQUB3A running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'acceleraor_data_mem_ctrl_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of acceleraor_data_mem_ctrl_0_0 (xilinx.com:user:data_mem_ctrl:1.0) from (Rev. 5) to (Rev. 7)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'acceleraor_data_mem_ctrl_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'w_address' width 16 differs from original width 12
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Dec 18 22:37:58 2019
+| Host         : LAPTOP-SOMQUB3A running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'acceleraor_data_mem_ctrl_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of acceleraor_data_mem_ctrl_0_0 (xilinx.com:user:data_mem_ctrl:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Dec 18 22:37:21 2019
+| Host         : LAPTOP-SOMQUB3A running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'acceleraor_data_mem_ctrl_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of acceleraor_data_mem_ctrl_0_0 (xilinx.com:user:data_mem_ctrl:1.0) from (Rev. 3) to (Rev. 4)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'acceleraor_data_mem_ctrl_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'address'
+
+-Upgrade has removed port 'data_in_to_mem'
+
+-Upgrade has removed port 'data_out'
+
+-Upgrade has removed port 'write_enable'
+
+-Upgrade has added port 'd_address'
+
+-Upgrade has added port 'd_data_out'
+
+-Upgrade has added port 'data_in_to_d_mem'
+
+-Upgrade has added port 'data_in_to_w_mem'
+
+-Upgrade has added port 'w_address'
+
+-Upgrade has added port 'w_data_out'
+
+-Upgrade has added port 'write_d_enable'
+
+-Upgrade has added port 'write_w_enable'
+
+
