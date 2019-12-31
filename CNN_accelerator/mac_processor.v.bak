@@ -8,8 +8,8 @@ module mac_processor(
 	input	data_en,
 	input	weight_en,
 	input	update,
-	//input	[3:0] operation, 
-	output reg	[63:0] answer
+	input	[3:0] operation, 
+	output	[63:0] answer
 );
 
 reg signed	[31:0]	data_buffer [24:0];

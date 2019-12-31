@@ -1,0 +1,16 @@
+C:/Users/USER/Documents/FPGA/CNN_accelerator/testfixture.v {1 {vlog -work work -vopt C:/Users/USER/Documents/FPGA/CNN_accelerator/testfixture.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module processor_ctrl
+-- Compiling module testfixture
+
+Top level modules:
+	testfixture
+
+} {} {}} C:/Users/USER/Documents/FPGA/CNN_accelerator/mac_processor.v {1 {vlog -work work -vopt C:/Users/USER/Documents/FPGA/CNN_accelerator/mac_processor.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module mac_processor
+
+Top level modules:
+	mac_processor
+
+} {} {}}

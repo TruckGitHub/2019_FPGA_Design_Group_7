@@ -1,4 +1,4 @@
-module  processor_ctrl(
+module  proccesor_ctrl(
 	input		clk,
 	input		reset,
 	input		start,
@@ -6,36 +6,18 @@ module  processor_ctrl(
 	input	signed	[31:0]	feature_idata, //包括 features、instruction	
 	input	signed	[31:0]	weight_idata, //包括 weight & bias 、input pic
 	
-	output reg	[11:0] 	feature_addr,
-	output reg	[31:0]	feature_data,
+	output	[11:0] 	feature_addr,
+	output	[31:0]	feature_data,
 	output reg	[15:0]	weight_addr,
-	output reg 	[31:0]	weight_data,
-	output	reg		feature_mem_en,
-	output	reg		weight_mem_en,
-	output	reg		done,
-	output	reg		instruction_finish
+	output 	[31:0]	weight_data,
+	output			feature_mem_en,
+	output			weight_mem_en,
+	output			done
 	);
 	
 	reg [4:0]	state , next_state;
 	wire [11:0] pooling_index;
 	wire [15:0] conv_index;
-	
-	
-wire [11:0] conv_input_size ;
-wire [3:0] kernel_size;
-wire [7:0] kernel_num;
-wire [3:0 ]stride;
-wire [3:0] operation;
-
-wire [7:0] pooling_kernel_num ;//6 
-wire [5:0] pooling_size; //2
-wire [13:0] pooling_input_size; //24
-
-wire [7:0] feature_num;  //6
-wire [5:0] fc_input_size; //12
-wire [3:0] class_num; //10
-wire [9:0] fc_mem_start;//940
-integer i;
 parameter	idle = 0,
 			fetch = 1, 
 			decode = 2,
@@ -61,7 +43,7 @@ parameter	CONV1 = 1,
 	reg [3:0]	write_count;
 	reg [11:0]	write_data_count;
 	reg [7:0]	conv_count;
-	//reg 		instruction_finish;
+	reg 		instruction_finish;
 	reg			load_finish;
 	reg			write_finish;
 	reg	[4:0]	data_count [5:0];
@@ -75,22 +57,22 @@ parameter	CONV1 = 1,
 			
 	mac_processor mac_0(.clk(clk), .reset(reset), .data(feature_idata), .weight(weight_idata), 
 		.data_count(data_count[0]), .weight_count(weight_count[0]), .data_en(data_en[0]), .weight_en(weight_en[0]),
-		.update(update[0]), /*.operation(operation),*/ .answer(answer0));
+		.update(update[0]), .operation(operation), .answer(answer0));
 	mac_processor mac_1(.clk(clk), .reset(reset), .data(feature_idata), .weight(weight_idata), 
 		.data_count(data_count[1]), .weight_count(weight_count[1]), .data_en(data_en[1]), .weight_en(weight_en[1]),
-		.update(update[1]), /*.operation(operation),*/ .answer(answer1));
+		.update(update[1]), .operation(operation), .answer(answer1));
 	mac_processor mac_2(.clk(clk), .reset(reset), .data(feature_idata), .weight(weight_idata), 
 		.data_count(data_count[2]), .weight_count(weight_count[2]), .data_en(data_en[2]), .weight_en(weight_en[2]),
-		.update(update[2]), /*.operation(operation),*/ .answer(answer2));
+		.update(update[2]), .operation(operation), .answer(answer2));
 	mac_processor mac_3(.clk(clk), .reset(reset), .data(feature_idata), .weight(weight_idata), 
 		.data_count(data_count[3]), .weight_count(weight_count[3]), .data_en(data_en[3]), .weight_en(weight_en[3]),
-		.update(update[3]), /*.operation(operation),*/ .answer(answer3));
+		.update(update[3]), .operation(operation), .answer(answer3));
 	mac_processor mac_4(.clk(clk), .reset(reset), .data(feature_idata), .weight(weight_idata), 
 		.data_count(data_count[4]), .weight_count(weight_count[4]), .data_en(data_en[4]), .weight_en(weight_en[4]),
-		.update(update[4]), /*.operation(operation),*/ .answer(answer4));
+		.update(update[4]), .operation(operation), .answer(answer4));
 	mac_processor mac_5(.clk(clk), .reset(reset), .data(feature_idata), .weight(weight_idata), 
 		.data_count(data_count[5]), .weight_count(weight_count[5]), .data_en(data_en[5]), .weight_en(weight_en[5]),
-		.update(update[5]), /*.operation(operation),*/ .answer(answer5));
+		.update(update[5]), .operation(operation), .answer(answer5));
 	
 			
 			
@@ -142,7 +124,6 @@ always@(posedge clk or posedge reset)begin
 end
 
 
-
 assign conv_input_size=instruction[11:0];
 assign kernel_size=instruction[15:12];
 assign kernel_num=instruction[23:16];
@@ -158,7 +139,7 @@ assign fc_input_size = instruction[19:14]; //12
 assign class_num = instruction[13:10]; //10
 assign fc_mem_start = instruction[9:0];//940
 
-reg [19:0]feature_size;
+wire feature_size[19:0];
 always@(posedge clk)begin
 	if(state == decode && operation== CONV1)
 		feature_size <= conv_input_size - kernel_size + 1;
@@ -173,7 +154,7 @@ always@(posedge clk or posedge reset)begin
 		program_counter <= 4095;
 	else if (state ==fetch && temp_count == 1)
 		program_counter <= program_counter - 1;
-end	
+end
 
 always@(posedge clk or posedge reset)begin
 	if(~reset)
@@ -182,13 +163,11 @@ always@(posedge clk or posedge reset)begin
 		temp_count <= ~temp_count;
 	else
 		temp_count <= 0;
-end
-		
+			
 always@(posedge clk or posedge reset)begin
-	if(~reset)begin
+	if(~reset)
 		x <= 0;
 		y <= 0;
-	end
 	else if(state == decode)begin
 		if(operation == CONV1)begin
 			x <= 2;
@@ -214,7 +193,6 @@ always@(posedge clk or posedge reset)begin
 		end
 		else
 			x <= x + 2;
-	end
 end		
 	
 		
@@ -264,7 +242,7 @@ always@(posedge clk )begin
 			9:weight_addr = conv_index - 26;
 			10:weight_addr = conv_index - 2;
 			11:weight_addr = conv_index - 1;	
-			12:weight_addr = conv_index;	
+			12:weight_addr = conv_index	
 			13:weight_addr = conv_index + 1;		
 			14:weight_addr = conv_index + 2;
 			15:weight_addr = conv_index + 26;
@@ -303,7 +281,7 @@ always@(posedge clk )begin
 			9:weight_addr = conv_index - 26;
 			10:weight_addr = conv_index - 2;
 			11:weight_addr = conv_index - 1;	
-			12:weight_addr = conv_index	;
+			12:weight_addr = conv_index	
 			13:weight_addr = conv_index + 1;		
 			14:weight_addr = conv_index + 2;
 			15:weight_addr = conv_index + 26;
@@ -317,7 +295,6 @@ always@(posedge clk )begin
 			23:weight_addr = conv_index + 57 ;		
 			24:weight_addr = conv_index + 58 ;
 		endcase
-	end
 	else if(state == decode && operation == FC)
 		weight_addr <= fc_mem_start;
 	else if(state == load && operation == FC)
@@ -331,10 +308,8 @@ always@(posedge clk or posedge reset )begin
 		feature_addr <= 0;
 	else if(state == fetch && temp_count == 0)
 		feature_addr <= program_counter;	
-	else if(state == write && operation == CONV1)begin
-		if(write_count>0)		//寫值
-			feature_addr <= feature_addr + (feature_size * feature_size);
-	end
+	else if(state == write && operation == CONV1)begin	 //寫值
+		feature_addr <= feature_addr + (feature_size * feature_size);
 	else if(state == load  && operation == CONV1 && load_count == 0)
 		feature_addr <= conv_count;
 		
@@ -366,7 +341,7 @@ end
 always@(posedge clk or posedge reset)begin
 	if(~reset)
 		write_finish <= 0;
-	else if(state == write && operation == CONV1 && write_count == kernel_num-1 )
+	else if(state == write && operation == CONV1 && write_count == kernel_num )
 		write_finish <= 1;
 	else if(state == write && operation == POOLING )	
 		write_finish <= 1;
@@ -394,16 +369,16 @@ always@(posedge clk or posedge reset)begin
 		write_data_count <= 0;
 end
 
-always@(*)begin
- weight_mem_en = 0;
-end
+
+assign weight_mem_en = 0;
+
 
 always@(*)begin
 	if(~reset)
-		feature_mem_en = 0;
+		feature_en = 0;
 	else if(state == write)
-		feature_mem_en = 1;
-	else feature_mem_en = 0;
+		feature_en = 1;
+	else feature_en = 0;
 end
 
 
@@ -517,54 +492,18 @@ always@(*)begin
 end
 
 always@(*)begin
-	if(state == load && operation == CONV1 && x == 2 && y == 2 && load_count > 25 && load_count <= 51 )begin
+	if(state == load && operation == CONV1 && x == 2 && y == 2 && load_count > 25 && load_count <= 51 )
 		weight_en[0] = 1;
-		weight_en[1] = 0;
-		weight_en[2] = 0;
-		weight_en[3] = 0;
-		weight_en[4] = 0;
-		weight_en[5] = 0;
-	end
-	else if(state == load && operation == CONV1 && x == 2 && y == 2 && load_count > 51 && load_count <= 77 )begin
+	else if(state == load && operation == CONV1 && x == 2 && y == 2 && load_count > 51 && load_count <= 77 )
 		weight_en[1] = 1;
-		weight_en[0] = 0;
-		weight_en[2] = 0;
-		weight_en[3] = 0;
-		weight_en[4] = 0;
-		weight_en[5] = 0;
-	end
-	else if(state == load && operation == CONV1 && x == 2 && y == 2 && load_count > 77 && load_count <= 103 )begin
+	else if(state == load && operation == CONV1 && x == 2 && y == 2 && load_count > 77 && load_count <= 103 )
 		weight_en[2] = 1;
-		weight_en[0] = 0;
-		weight_en[1] = 0;
-		weight_en[3] = 0;
-		weight_en[4] = 0;
-		weight_en[5] = 0;
-	end	
-	else if(state == load && operation == CONV1 && x == 2 && y == 2 && load_count > 103 && load_count <= 129 )begin
+	else if(state == load && operation == CONV1 && x == 2 && y == 2 && load_count > 103 && load_count <= 129 )
 		weight_en[3] = 1;
-		weight_en[0] = 0;
-		weight_en[1] = 0;
-		weight_en[2] = 0;
-		weight_en[4] = 0;
-		weight_en[5] = 0;
-	end	
-	else if(state == load && operation == CONV1 && x == 2 && y == 2 && load_count > 129 && load_count <= 155 )begin
+	else if(state == load && operation == CONV1 && x == 2 && y == 2 && load_count > 129 && load_count <= 155 )
 		weight_en[4] = 1;
-		weight_en[0] = 0;
-		weight_en[1] = 0;
-		weight_en[2] = 0;
-		weight_en[3] = 0;
-		weight_en[5] = 0;
-	end	
-	else if(state == load && operation == CONV1 && x == 2 && y == 2 && load_count > 155 && load_count <= 181 )begin
+	else if(state == load && operation == CONV1 && x == 2 && y == 2 && load_count > 155 && load_count <= 181 )
 		weight_en[5] = 1;
-		weight_en[0] = 0;
-		weight_en[1] = 0;
-		weight_en[2] = 0;
-		weight_en[3] = 0;
-		weight_en[4] = 0;
-	end	
 	else begin
 		for(i=0;i<6;i=i+1)
 			weight_en[i] = 0;

@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\USER\Documents\FPGA\HW5_1
+vmac_processor
+V^2?M<:Vaj[b>mQg0MeIP?0
+r1
+!s85 0
+31
+IY[WH7`cW@lBeiCnOUc]EV0
+Z0 dC:\Users\USER\Documents\FPGA\CNN_accelerator
+w1577800899
+8C:/Users/USER/Documents/FPGA/CNN_accelerator/mac_processor.v
+FC:/Users/USER/Documents/FPGA/CNN_accelerator/mac_processor.v
+L0 1
+Z1 OL;L;10.1c;51
+Z2 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 X1W`8UX?]Z741Q`PHg36N1
+!s90 -reportprogress|300|-work|work|-vopt|C:/Users/USER/Documents/FPGA/CNN_accelerator/mac_processor.v|
+!s108 1577802433.849000
+!s107 C:/Users/USER/Documents/FPGA/CNN_accelerator/mac_processor.v|
+!i10b 1
+vproccesor_ctrl
+IA48>lXPTEAHo4;V3Jh`E[3
+V5UgY^`lPIb<EP[26b41UL1
+Z3 dC:\Users\USER\Documents\FPGA\CNN_accelerator
+w1577796986
+Z4 Fprocessing_element.v
+Z5 8C:/Users/USER/Documents/FPGA/CNN_accelerator/testfixture.v
+Z6 FC:/Users/USER/Documents/FPGA/CNN_accelerator/testfixture.v
+L0 1
+R1
+r1
+31
+Z7 !s107 processing_element.v|C:/Users/USER/Documents/FPGA/CNN_accelerator/testfixture.v|
+Z8 !s90 -reportprogress|300|-work|work|-vopt|C:/Users/USER/Documents/FPGA/CNN_accelerator/testfixture.v|
+R2
+!s108 1577796986.424000
+!s100 2_10fji<KLlgjIa<>iDAC1
+!i10b 1
+!s85 0
+vprocessor_ctrl
+V`a[UZK=zaEAoMK4cQM5c;1
+r1
+31
+I628Yd0<10CDb_LVzl`jcQ1
+R3
+w1577802431
+R4
+R5
+R6
+L0 1
+R1
+Z9 !s108 1577802434.229000
+R7
+R8
+R2
+!s85 0
+!i10b 1
+!s100 ;CU_NH0=EDZNL7E1[0M[N0
+vtestfixture
+VKBIIT=eCh7cJh[^JXBGX00
+r1
+31
+I]Y]3`bB2[I402gfK0eNPV1
+R3
+w1577798664
+R5
+R6
+L0 14
+R1
+R9
+R7
+R8
+R2
+!s85 0
+!s100 4GYJ9O_nG7zmChKH<zb_;1
+!i10b 1
