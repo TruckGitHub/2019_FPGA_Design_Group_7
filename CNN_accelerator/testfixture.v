@@ -6,8 +6,8 @@
 `define End_CYCLE  100000000              // Modify cycle times once your design need more cycle times!
 `define FEATURE		"./dat_univ/feature.dat"
 `define PAT        "./dat_univ/cnn_sti.dat"                 // Modify your "dat" directory path
-`define WEIGHT		"./dat_univ/kernel.dat"
-`define L0_EXP0        "./dat_univ/cnn_layer0_exp0.dat"       
+`define WEIGHT		"./dat_univ/inputconv_wbfc_w.dat"
+`define L0_EXP0        "./dat_univ/conv_result.dat"       
 `define L1_EXP0        "./dat_univ/cnn_layer1_exp0.dat"     
 
 
@@ -17,13 +17,13 @@ module testfixture;
 reg	[31:0]	feature_mem	[0:4095];
 reg	[31:0]	weight_mem	[0:65536];
 
-reg	[31:0]	L0_EXP0	[0:4095];  
+reg	[31:0]	L0_EXP0	[0:50000];  
 reg	[31:0]	L0_MEM0	[0:4095]; 
 
  
-reg	[31:0]	L1_EXP0	[0:1023];
+reg	[31:0]	L1_EXP0	[0:50000];
 reg	[31:0]	L1_MEM0	[0:1023];
-
+//reg	[5:0]	count;
 
 
 reg		reset = 1;
@@ -51,7 +51,7 @@ reg		check0=0, check1=0;
 	initial $sdf_annotate(`SDFFILE, u_CONV);
 `endif
 
-processor_ctrl proccesor_ctrl(
+processor_ctrl processor_ctrl(
 			.clk(clk),
 			.reset(reset),	
 			.start(start),	
@@ -104,7 +104,7 @@ end
 
 initial begin // initial pattern and expected result
 	wait (start==1) begin
-		$readmemh(`PAT, weight_mem);
+		//$readmemh(`PAT, weight_mem);
 		$readmemh(`WEIGHT, weight_mem);
 		$readmemh(`FEATURE, feature_mem);
 		$readmemh(`L0_EXP0, L0_EXP0);
@@ -157,6 +157,14 @@ always@(posedge clk) begin
 		endcase
 	end
 end*/
+/*
+always@(posedge clk)begin
+	if(~reset)
+		count <= 0;
+	else if(instruction_finish)
+		count <= count + 1;
+end*/
+	
 
 
 //-------------------------------------------------------------------------------------------------------------------
@@ -164,9 +172,13 @@ initial begin  	// layer 0,  conv output
 check0<= 0;
 wait(start==1);
 wait(instruction_finish == 1);
+wait(instruction_finish == 0);
+wait(instruction_finish == 1);
+wait(instruction_finish == 0);
+wait(instruction_finish == 1);
 if (check0 == 1) begin 
 	err00 = 0;
-	for (p0=0; p0<=4095; p0=p0+1) begin
+	for (p0=0; p0<=100; p0=p0+1) begin
 		if (feature_mem[p0] == L0_EXP0[p0]) ;
 		else begin
 			err00 = err00 + 1;
@@ -178,6 +190,19 @@ if (check0 == 1) begin
 	end
 	if (err00 == 0) $display("Convolutional Output with Kernel 0 is correct !");
 	else		 $display("Convolutional Output with Kernel 0 be found %d error !", err00);
+	begin
+	$display("0:%h",feature_mem[0]);
+	$display("0:%h",feature_mem[1]);
+	$display("0:%h",feature_mem[2]);
+	$display("0:%h",feature_mem[3]);
+	$display("0:%h",feature_mem[4]);
+	$display("0:%h",feature_mem[5]);
+	$display("0:%h",feature_mem[6]);
+	$display("0:%h",feature_mem[7]);
+	$display("0:%h",feature_mem[8]);
+	$display("0:%h",feature_mem[9]);
+	end
+	
 	$finish;
 end
 end

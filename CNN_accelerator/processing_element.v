@@ -9,9 +9,9 @@ module  processor_ctrl(
 	output reg	[11:0] 	feature_addr,
 	output reg	[31:0]	feature_data,
 	output reg	[15:0]	weight_addr,
-	output reg 	[31:0]	weight_data,
+	output  	[31:0]	weight_data,
 	output	reg		feature_mem_en,
-	output	reg		weight_mem_en,
+	output			weight_mem_en,
 	output	reg		done,
 	output	reg		instruction_finish
 	);
@@ -42,7 +42,7 @@ parameter	idle = 0,
 			load = 3,
 			conv = 4,
 			pooling= 5,
-			//fc		= 6,
+			fc		= 6,
 			write = 7,
 			finish = 8;
 
@@ -53,14 +53,14 @@ parameter	CONV1 = 1,
 
 
 
-	reg [4:0]x , y;		
+	reg [11:0]x , y;		
 	reg	[31:0]	instruction;
 	reg			temp_count; //fetch has 2 cycle.
 	reg [11:0]	program_counter;//instruction
-	reg [7:0]	load_count;
+	reg [15:0]	load_count;
 	reg [3:0]	write_count;
 	reg [11:0]	write_data_count;
-	reg [7:0]	conv_count;
+	reg [11:0]	conv_count;
 	//reg 		instruction_finish;
 	reg			load_finish;
 	reg			write_finish;
@@ -71,24 +71,44 @@ parameter	CONV1 = 1,
 	wire [63:0] answer0 , answer1, answer2, answer3, answer4, answer5 ;
 	reg	[63:0]	fc_answer;
 	reg	[31:0]	pooling_max;
-			
-			
-	mac_processor mac_0(.clk(clk), .reset(reset), .data(feature_idata), .weight(weight_idata), 
+	reg	[31:0]	data_mac0, data_mac1, data_mac2, data_mac3, data_mac4, data_mac5;
+	reg [11:0]	pooling_count;
+
+always@(*)begin
+	if(operation == CONV1)begin
+		data_mac0 = weight_idata;
+		data_mac1 = weight_idata;
+		data_mac2 = weight_idata;
+		data_mac3 = weight_idata;
+		data_mac4 = weight_idata;
+		data_mac5 = weight_idata;
+	end	
+	else begin
+		data_mac0 = feature_idata;
+		data_mac1 = feature_idata;
+		data_mac2 = feature_idata;
+		data_mac3 = feature_idata;
+		data_mac4 = feature_idata;
+		data_mac5 = feature_idata;
+	end
+end
+	
+	mac_processor mac_0(.clk(clk), .reset(reset), .data(data_mac0), .weight(weight_idata), 
 		.data_count(data_count[0]), .weight_count(weight_count[0]), .data_en(data_en[0]), .weight_en(weight_en[0]),
 		.update(update[0]), /*.operation(operation),*/ .answer(answer0));
-	mac_processor mac_1(.clk(clk), .reset(reset), .data(feature_idata), .weight(weight_idata), 
+	mac_processor mac_1(.clk(clk), .reset(reset), .data(data_mac1), .weight(weight_idata), 
 		.data_count(data_count[1]), .weight_count(weight_count[1]), .data_en(data_en[1]), .weight_en(weight_en[1]),
 		.update(update[1]), /*.operation(operation),*/ .answer(answer1));
-	mac_processor mac_2(.clk(clk), .reset(reset), .data(feature_idata), .weight(weight_idata), 
+	mac_processor mac_2(.clk(clk), .reset(reset), .data(data_mac2), .weight(weight_idata), 
 		.data_count(data_count[2]), .weight_count(weight_count[2]), .data_en(data_en[2]), .weight_en(weight_en[2]),
 		.update(update[2]), /*.operation(operation),*/ .answer(answer2));
-	mac_processor mac_3(.clk(clk), .reset(reset), .data(feature_idata), .weight(weight_idata), 
+	mac_processor mac_3(.clk(clk), .reset(reset), .data(data_mac3), .weight(weight_idata), 
 		.data_count(data_count[3]), .weight_count(weight_count[3]), .data_en(data_en[3]), .weight_en(weight_en[3]),
 		.update(update[3]), /*.operation(operation),*/ .answer(answer3));
-	mac_processor mac_4(.clk(clk), .reset(reset), .data(feature_idata), .weight(weight_idata), 
+	mac_processor mac_4(.clk(clk), .reset(reset), .data(data_mac4), .weight(weight_idata), 
 		.data_count(data_count[4]), .weight_count(weight_count[4]), .data_en(data_en[4]), .weight_en(weight_en[4]),
 		.update(update[4]), /*.operation(operation),*/ .answer(answer4));
-	mac_processor mac_5(.clk(clk), .reset(reset), .data(feature_idata), .weight(weight_idata), 
+	mac_processor mac_5(.clk(clk), .reset(reset), .data(data_mac5), .weight(weight_idata), 
 		.data_count(data_count[5]), .weight_count(weight_count[5]), .data_en(data_en[5]), .weight_en(weight_en[5]),
 		.update(update[5]), /*.operation(operation),*/ .answer(answer5));
 	
@@ -106,15 +126,15 @@ always@(*)begin
 				else if(load_finish && operation == POOLING)
 					next_state = pooling;
 				else if(load_finish && operation == FC)
-					next_state = write;
+					next_state = fc;
 				else 
 					next_state = load;
 				end
 		conv:	next_state = write;
 		pooling:	next_state = write;
-		//fc:		next_state = (fc_finish)?write:fc;
+		fc:		next_state = write;
 		write:	begin	
-				if(write_finish && instruction_finish)
+				if(instruction_finish)
 					next_state = finish;
 				else if (write_finish == 1 && instruction_finish == 0)
 					next_state = load;
@@ -219,7 +239,7 @@ end
 	
 		
 always@(posedge clk or posedge reset)begin
-	if(state == decode || state == conv || state == pooling)
+	if(state == decode || state == conv || state == pooling || state == fc)
 		load_count <= 0 ;
 	else if(state == load)
 		load_count <= load_count + 1 ;
@@ -236,7 +256,7 @@ always@(posedge clk or posedge reset)begin
 		load_finish <= 1;
 	else if(state == load && operation == POOLING &&  (load_count == pooling_size*pooling_size))	
 		load_finish <= 1;
-	else if(state ==load && operation ==FC  && load_count == feature_size)
+	else if(state ==load && operation ==FC  && load_count == (feature_size - 2))
 		load_finish <= 1;
 	else
 		load_finish <= 0;
@@ -344,16 +364,24 @@ always@(posedge clk or posedge reset )begin
 			1:	feature_addr <= feature_addr + 1;
 			2:	feature_addr <= feature_addr + pooling_input_size - 1;
 			3:	feature_addr <= feature_addr + 1;
+			4:	feature_addr <= pooling_count;
 		endcase
 	end
-	else if(state == write && operation == POOLING)
-		feature_addr <= feature_addr + 1;
-	else if(state == write && operation == FC)
-		feature_addr <= feature_addr + 1;
-	else
+	
+	else if(state == decode)
 		feature_addr <= 0;
+
+	else if(state == write && operation == FC && write_count == 1)
+		feature_addr <= feature_addr + 1;
+
 end	
 
+always@(posedge clk or posedge reset)begin
+	if(~reset)
+		pooling_count <= 0;
+	else if(state == write && operation == POOLING && write_finish == 1)
+		pooling_count <= pooling_count + 1;
+end
 
 always@(posedge clk or posedge reset)begin
 	if(~reset)
@@ -368,7 +396,7 @@ always@(posedge clk or posedge reset)begin
 		write_finish <= 0;
 	else if(state == write && operation == CONV1 && write_count == kernel_num-1 )
 		write_finish <= 1;
-	else if(state == write && operation == POOLING )	
+	else if(state == write && operation == POOLING && write_count == 1)	
 		write_finish <= 1;
 	else if(state == write && operation == FC)
 		write_finish <= 1;
@@ -388,15 +416,22 @@ end
 always@(posedge clk or posedge reset)begin
 	if(~reset)
 		write_data_count <= 0;
-	else if(state == write )
-		write_data_count <= write_data_count + 1;
+	else if(state == write && write_count < kernel_num)begin
+		if(operation == CONV1)
+			write_data_count <= write_data_count + 1;
+		else if(operation == POOLING && write_count == 0)
+			write_data_count <= write_data_count + 1;
+		else if(operation == FC && write_count == 0)
+			write_data_count <= write_data_count + 1;
+	end
+
 	else if(state == finish)
 		write_data_count <= 0;
 end
 
-always@(*)begin
- weight_mem_en = 0;
-end
+
+assign weight_mem_en = 0;
+assign	weight_data = 32'd0;
 
 always@(*)begin
 	if(~reset)
@@ -410,9 +445,9 @@ end
 always@(posedge clk or posedge reset)begin
 	if(~reset)
 		instruction_finish <= 0;
-	else if(state == write && operation == CONV1 && write_data_count == feature_size * feature_size )
+	else if(state == write && operation == CONV1 && write_data_count == (feature_size * feature_size * kernel_num)-1 )
 		instruction_finish <= 1;
-	else if(state == write && operation == POOLING && write_data_count == feature_size * feature_size * pooling_kernel_num )	
+	else if(state == write && operation == POOLING && write_data_count == (feature_size * feature_size * pooling_kernel_num) )	
 		instruction_finish <= 1;
 	else if(state == write && operation == FC && write_data_count == class_num)
 		instruction_finish <= 1;
@@ -438,11 +473,11 @@ always@(posedge clk or posedge reset)begin
 	else if(state == load && operation == CONV1 &&  x > 2 )begin
 		for(i=0;i<6;i=i+1)begin
 			case(load_count)
-				1: data_count[i] <= 4;
-				2: data_count[i] <= 9;
-				3: data_count[i] <= 14;
-				4: data_count[i] <= 19;
-				5: data_count[i] <= 24;
+				0: data_count[i] <= 4;
+				1: data_count[i] <= 9;
+				2: data_count[i] <= 14;
+				3: data_count[i] <= 19;
+				4: data_count[i] <= 24;
 			endcase
 		end
 	end
@@ -587,7 +622,7 @@ always@(posedge clk or posedge reset)begin
 		pooling_max <= 0;
 	else if(state == load && operation == POOLING  && load_count == 1)
 		pooling_max <= feature_idata;
-	else if (state == load && operation == POOLING  && (feature_data > pooling_max) && load_count > 1)
+	else if (state == load && operation == POOLING  && (feature_idata > pooling_max) && load_count > 1)
 		pooling_max <= feature_idata;
 end
 
