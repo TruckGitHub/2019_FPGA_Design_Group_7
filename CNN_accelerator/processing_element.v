@@ -7,13 +7,13 @@ module  processor_ctrl(
 	input	signed	[31:0]	weight_idata, //包括 weight & bias 、input pic
 	
 	output reg	[11:0] 	feature_addr,
-	output reg	[31:0]	feature_data,
+	output reg signed	[31:0]	feature_data,
 	output reg	[15:0]	weight_addr,
 	output  	[31:0]	weight_data,
 	output	reg		feature_mem_en,
 	output			weight_mem_en,
-	output	reg		done,
-	output	reg		instruction_finish
+	output	reg		done
+	//output	reg		instruction_finish
 	);
 	
 	reg [4:0]	state , next_state;
@@ -61,7 +61,7 @@ parameter	CONV1 = 1,
 	reg [3:0]	write_count;
 	reg [11:0]	write_data_count;
 	reg [11:0]	conv_count;
-	//reg 		instruction_finish;
+	reg 		instruction_finish;
 	reg			load_finish;
 	reg			write_finish;
 	reg	[4:0]	data_count [5:0];
@@ -69,10 +69,12 @@ parameter	CONV1 = 1,
 	reg	[5:0]	update;
 	reg	[5:0]	data_en, weight_en;
 	wire [63:0] answer0 , answer1, answer2, answer3, answer4, answer5 ;
-	reg	[63:0]	fc_answer;
-	reg	[31:0]	pooling_max;
-	reg	[31:0]	data_mac0, data_mac1, data_mac2, data_mac3, data_mac4, data_mac5;
+	reg signed	[63:0]	fc_answer;
+	reg signed	[31:0]	pooling_max;
+	reg signed	[31:0]	data_mac0, data_mac1, data_mac2, data_mac3, data_mac4, data_mac5;
 	reg [11:0]	pooling_count;
+	reg [11:0]	fc_count, fc_addr, fc_addr_count;
+	wire signed [63:0] fc_temp;
 
 always@(*)begin
 	if(operation == CONV1)begin
@@ -370,11 +372,49 @@ always@(posedge clk or posedge reset )begin
 	
 	else if(state == decode)
 		feature_addr <= 0;
-
-	else if(state == write && operation == FC && write_count == 1)
-		feature_addr <= feature_addr + 1;
-
+	else if(state == load && operation == FC)begin
+		if(fc_addr_count < 5)
+			feature_addr <= feature_addr + 144;
+		else if(fc_addr_count == 5)
+			feature_addr <= fc_addr;
+		end
+	else if(state == write && operation == FC && write_count == 0)
+		feature_addr <= fc_count;
+	else if(state == write && operation == FC && write_count == 1)	
+		feature_addr <= 0;
 end	
+
+always@(posedge clk or posedge reset)begin
+	if(~reset)
+		fc_addr_count <= 0;
+	else if(state == load && operation == FC)begin
+		if(fc_addr_count == 5)
+			fc_addr_count <= 0;
+		else
+			fc_addr_count <= fc_addr_count + 1;
+	end
+end
+
+always@(posedge clk or posedge reset)begin
+	if(~reset)
+		fc_addr <= 0;
+	else if	(state == load && operation == FC && fc_addr_count == 4)
+		fc_addr <= fc_addr + 1;
+	else if(state ==write && operation ==FC)
+		fc_addr <= 0;
+end
+
+
+
+always@(posedge clk or posedge reset)begin
+	if(~reset)
+		fc_count <= 1000;
+	else if(state == decode)
+		fc_count <= 1000;
+	else if(state == write && operation == FC && write_count == 0)	
+		fc_count <= fc_count + 1;
+end
+		
 
 always@(posedge clk or posedge reset)begin
 	if(~reset)
@@ -622,16 +662,18 @@ always@(posedge clk or posedge reset)begin
 		pooling_max <= 0;
 	else if(state == load && operation == POOLING  && load_count == 1)
 		pooling_max <= feature_idata;
-	else if (state == load && operation == POOLING  && (feature_idata > pooling_max) && load_count > 1)
+	else if (state == load && operation == POOLING  && (feature_idata > pooling_max) && load_count > 1 && load_count <=4)
 		pooling_max <= feature_idata;
 end
+
+assign fc_temp = feature_idata * weight_idata;
 
 always@(posedge clk or posedge reset)begin
 	if (~reset)
 		fc_answer <= 0;
-	else if(state == load && operation == FC  && load_count > 0 )
-		fc_answer <= fc_answer + (feature_idata * weight_idata);
-	else if(state == load && operation == FC  && load_count == 0 )
+	else if(state == load && operation == FC  )
+		fc_answer <= fc_answer + fc_temp;
+	else if(state == write && operation == FC  && write_count == 1 )
 		fc_answer <= 0;
 		
 end
@@ -639,12 +681,12 @@ end
 always@(posedge clk or posedge reset)begin
 	if(state == write && operation == CONV1)begin
 		case(write_count)
-			0:	feature_data <= answer0[58:27];
-			1:	feature_data <= answer1[58:27];
-			2:	feature_data <= answer2[58:27];
-			3:	feature_data <= answer3[58:27];
-			4:	feature_data <= answer4[58:27];
-			5:	feature_data <= answer5[58:27];
+			0:	feature_data <= (answer0[58]==0)?answer0[58:27]:0;
+			1:	feature_data <= (answer1[58]==0)?answer1[58:27]:0;
+			2:	feature_data <= (answer2[58]==0)?answer2[58:27]:0;
+			3:	feature_data <= (answer3[58]==0)?answer3[58:27]:0;
+			4:	feature_data <= (answer4[58]==0)?answer4[58:27]:0;
+			5:	feature_data <= (answer5[58]==0)?answer5[58:27]:0;
 		endcase
 	end
 	else if(state == write && operation == POOLING)

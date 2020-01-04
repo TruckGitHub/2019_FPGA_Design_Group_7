@@ -71,13 +71,10 @@ assign temp_answer =((temp[0]+temp[1])+(temp[2]+temp[3]))+
 					((temp[20]+temp[21])+(temp[22]+temp[23]))+(temp[24]+bias);
 
 always@(*)begin	
-	if(temp_answer < 0)
-		answer = 0;
-	else
+
 		answer = temp_answer;
 	
 end
-
 
 
 endmodule

@@ -44,7 +44,7 @@ wire	instruction_finish;
 integer		p0, p1, p3, p4, p2;
 integer		err00, err10;
 
-integer		pat_num;
+integer		pat_num , f;
 reg		check0=0, check1=0;
 
 `ifdef SDF
@@ -178,8 +178,11 @@ wait(instruction_finish == 0);
 wait(instruction_finish == 1);
 if (check0 == 1) begin 
 	err00 = 0;
-	for (p0=0; p0<=100; p0=p0+1) begin
-		if (feature_mem[p0] == L0_EXP0[p0]) ;
+	f = $fopen("output.txt","w");
+	for (p0=0; p0<=863; p0=p0+1) begin
+		$fwrite(f,"%h\n",feature_mem[p0]);
+		if (feature_mem[p0] == L0_EXP0[p0]);
+		
 		else begin
 			err00 = err00 + 1;
 			begin 
@@ -191,16 +194,16 @@ if (check0 == 1) begin
 	if (err00 == 0) $display("Convolutional Output with Kernel 0 is correct !");
 	else		 $display("Convolutional Output with Kernel 0 be found %d error !", err00);
 	begin
-	$display("0:%h",feature_mem[0]);
-	$display("0:%h",feature_mem[1]);
-	$display("0:%h",feature_mem[2]);
-	$display("0:%h",feature_mem[3]);
-	$display("0:%h",feature_mem[4]);
-	$display("0:%h",feature_mem[5]);
-	$display("0:%h",feature_mem[6]);
-	$display("0:%h",feature_mem[7]);
-	$display("0:%h",feature_mem[8]);
-	$display("0:%h",feature_mem[9]);
+	$display("0:%h",feature_mem[1000]);
+	$display("0:%h",feature_mem[1001]);
+	$display("0:%h",feature_mem[1002]);
+	$display("0:%h",feature_mem[1003]);
+	$display("0:%h",feature_mem[1004]);
+	$display("0:%h",feature_mem[1005]);
+	$display("0:%h",feature_mem[1006]);
+	$display("0:%h",feature_mem[1007]);
+	$display("0:%h",feature_mem[1008]);
+	$display("0:%h",feature_mem[1009]);
 	end
 	
 	$finish;
