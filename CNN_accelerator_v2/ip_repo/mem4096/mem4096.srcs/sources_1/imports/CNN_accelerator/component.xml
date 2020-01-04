@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>mem4096X32</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>clk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>Verilog</spirit:language>
+        <spirit:modelName>mem4096X32</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>f6ab5c66</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>Verilog</spirit:language>
+        <spirit:modelName>mem4096X32</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>f6ab5c66</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>f64a5dae</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>write_enable1</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>data_in1</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>address1</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">11</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>write_enable2</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>data_in2</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>address2</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">11</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>data_out1</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>reg</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>data_out2</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>reg</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../../../../../../FPGA/ip_repo/mem4096/mem4096.srcs/sources_1/imports/CNN_accelerator/feature_mem.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_f6ab5c66</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../../../../../../FPGA/ip_repo/mem4096/mem4096.srcs/sources_1/imports/CNN_accelerator/feature_mem.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/mem4096X32_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_f64a5dae</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>mem4096X32_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">mem4096X32_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Production">kintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">artix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">artix7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">aartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">zynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">azynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">spartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">aspartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">zynquplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintexu</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>mem4096X32_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>3</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2020-01-04T17:11:18Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a347d0c_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@aa07776_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dc7fd54_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52467133_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c02808f_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35117c3e_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44daf2ce_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@609965c9_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e6cf683_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cdb8dc7_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37cf0c9a_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ce19000_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6858e123_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70d1f00c_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66deef74_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62eb1418_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cc034ff_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e8dd876_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ba5474d_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d6fe569_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c21255d_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68d2cebc_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cba51e6_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44229e78_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fdd986a_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ce6c447_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f16fc00_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f6a1197_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c201b93_ARCHIVE_LOCATION">d:/fpga/ip_repo/mem4096/mem4096.srcs/sources_1/imports/cnn_accelerator</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a88d4390"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="0f9e4da0"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="4260aee7"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="8751f70e"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

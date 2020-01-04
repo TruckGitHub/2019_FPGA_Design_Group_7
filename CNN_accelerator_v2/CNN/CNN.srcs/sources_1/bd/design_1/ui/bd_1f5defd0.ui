@@ -1,0 +1,47 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 530 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 550 -defaultsOSRD
+preplace inst mem4096X32_0 -pg 1 -lvl 3 -y 300 -defaultsOSRD
+preplace inst memory_ctrl_0 -pg 1 -lvl 4 -y 410 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -y 550 -defaultsOSRD
+preplace inst process_ctrl_0 -pg 1 -lvl 2 -y 280 -defaultsOSRD
+preplace inst mem65536X32_0 -pg 1 -lvl 1 -y 150 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -y 670 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -y 580 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 2 3 NJ 530 NJ 530 NJ
+preplace netloc process_ctrl_0_weight_data 1 0 3 50 20 NJ 20 1140
+preplace netloc mem65536X32_0_data_out1 1 1 3 NJ 140 NJ 140 1570
+preplace netloc mem65536X32_0_data_out2 1 1 1 680
+preplace netloc memory_ctrl_0_w_address 1 0 5 20J -20 NJ -20 NJ -20 NJ -20 1940
+preplace netloc memory_ctrl_0_write_d_enable 1 2 3 1230 170 NJ 170 1890
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 1210
+preplace netloc process_ctrl_0_weight_mem_en 1 0 3 30 0 NJ 0 1150
+preplace netloc memory_ctrl_0_data_in_to_w_mem 1 0 5 40J -10 NJ -10 NJ -10 NJ -10 1950
+preplace netloc memory_ctrl_0_write_w_enable 1 0 5 80J 10 NJ 10 NJ 10 NJ 10 1920
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 3 80J 450 NJ 450 1130
+preplace netloc mem4096X32_0_data_out1 1 3 1 1550
+preplace netloc memory_ctrl_0_data_in_to_d_mem 1 2 3 1210 120 NJ 120 1910
+preplace netloc process_ctrl_0_feature_data 1 2 1 1170
+preplace netloc process_ctrl_0_feature_mem_en 1 2 1 1190
+preplace netloc mem4096X32_0_data_out2 1 1 3 720 130 NJ 130 1530
+preplace netloc memory_ctrl_0_pl_start 1 1 4 710 110 NJ 110 NJ 110 1930
+preplace netloc processing_system7_0_FIXED_IO 1 2 3 NJ 550 NJ 550 NJ
+preplace netloc memory_ctrl_0_d_address 1 2 3 1220 160 NJ 160 1900
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 3 700 460 1230 460 NJ
+preplace netloc process_ctrl_0_done 1 2 2 1160 180 1540J
+preplace netloc process_ctrl_0_feature_addr 1 2 1 1200
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 70 270 690 160 1180 440 NJ
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 1 1560
+preplace netloc process_ctrl_0_weight_addr 1 0 3 60 30 NJ 30 1130
+levelinfo -pg 1 0 510 930 1380 1730 1980 -top -50 -bot 790
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_board_cnt":"1",
+   "da_clkrst_cnt":"3",
+   "da_ps7_cnt":"1"
+}

@@ -1,0 +1,37 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Jan  5 02:39:32 2020
+| Host         : DESKTOP-PRBRFBN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mem65536X32_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_mem65536X32_0_0 (xilinx.com:user:mem65536X32:1.0) from (Rev. 2) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Jan  5 01:45:26 2020
+| Host         : DESKTOP-PRBRFBN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_processor_ctrl_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_processor_ctrl_0_0 (xilinx.com:user:processor_ctrl:1.0) from (Rev. 2) to (Rev. 3)
+
