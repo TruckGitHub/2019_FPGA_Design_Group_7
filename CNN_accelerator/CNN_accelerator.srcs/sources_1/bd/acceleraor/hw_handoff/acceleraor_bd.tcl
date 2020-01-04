@@ -164,12 +164,6 @@ proc create_root_design { parentCell } {
   # Create instance: data_mem_ctrl_0, and set properties
   set data_mem_ctrl_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:data_mem_ctrl:1.0 data_mem_ctrl_0 ]
 
-  # Create instance: mem4096X32_0, and set properties
-  set mem4096X32_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:mem4096X32:1.0 mem4096X32_0 ]
-
-  # Create instance: mem65536X32_0, and set properties
-  set mem65536X32_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:mem65536X32:1.0 mem65536X32_0 ]
-
   # Create instance: proc_sys_reset_0, and set properties
   set proc_sys_reset_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0 ]
 
@@ -389,7 +383,7 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_INCLUDE_TRACE_BUFFER {0} \
    CONFIG.PCW_IOPLL_CTRL_FBDIV {20} \
    CONFIG.PCW_IO_IO_PLL_FREQMHZ {1000.000} \
-   CONFIG.PCW_IRQ_F2P_INTR {0} \
+   CONFIG.PCW_IRQ_F2P_INTR {1} \
    CONFIG.PCW_IRQ_F2P_MODE {DIRECT} \
    CONFIG.PCW_MIO_0_DIRECTION {inout} \
    CONFIG.PCW_MIO_0_IOTYPE {LVCMOS 3.3V} \
@@ -702,7 +696,7 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_PCAP_PERIPHERAL_CLKSRC {IO PLL} \
    CONFIG.PCW_PCAP_PERIPHERAL_DIVISOR0 {5} \
    CONFIG.PCW_PCAP_PERIPHERAL_FREQMHZ {200} \
-   CONFIG.PCW_PERIPHERAL_BOARD_PRESET {None} \
+   CONFIG.PCW_PERIPHERAL_BOARD_PRESET {part0} \
    CONFIG.PCW_PLL_BYPASSMODE_ENABLE {0} \
    CONFIG.PCW_PRESET_BANK0_VOLTAGE {LVCMOS 3.3V} \
    CONFIG.PCW_PRESET_BANK1_VOLTAGE {LVCMOS 1.8V} \
@@ -925,7 +919,7 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_USE_DMA3 {0} \
    CONFIG.PCW_USE_EXPANDED_IOP {0} \
    CONFIG.PCW_USE_EXPANDED_PS_SLCR_REGISTERS {0} \
-   CONFIG.PCW_USE_FABRIC_INTERRUPT {0} \
+   CONFIG.PCW_USE_FABRIC_INTERRUPT {1} \
    CONFIG.PCW_USE_HIGH_OCM {0} \
    CONFIG.PCW_USE_M_AXI_GP0 {1} \
    CONFIG.PCW_USE_M_AXI_GP1 {0} \
@@ -946,10 +940,13 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_WDT_PERIPHERAL_FREQMHZ {133.333333} \
  ] $processing_system7_0
 
+  # Create instance: processor_ctrl_0, and set properties
+  set processor_ctrl_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:processor_ctrl:1.0 processor_ctrl_0 ]
+
   # Create instance: ps7_0_axi_periph, and set properties
   set ps7_0_axi_periph [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 ps7_0_axi_periph ]
   set_property -dict [ list \
-   CONFIG.NUM_MI {1} \
+   CONFIG.NUM_MI {2} \
  ] $ps7_0_axi_periph
 
   # Create interface connections
@@ -959,16 +956,9 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M00_AXI [get_bd_intf_pins data_mem_ctrl_0/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M00_AXI]
 
   # Create port connections
-  connect_bd_net -net data_mem_ctrl_0_d_address [get_bd_pins data_mem_ctrl_0/d_address] [get_bd_pins mem4096X32_0/address1]
-  connect_bd_net -net data_mem_ctrl_0_data_in_to_d_mem [get_bd_pins data_mem_ctrl_0/data_in_to_d_mem] [get_bd_pins mem4096X32_0/data_in1]
-  connect_bd_net -net data_mem_ctrl_0_data_in_to_w_mem [get_bd_pins data_mem_ctrl_0/data_in_to_w_mem] [get_bd_pins mem65536X32_0/data_in1]
-  connect_bd_net -net data_mem_ctrl_0_w_address [get_bd_pins data_mem_ctrl_0/w_address] [get_bd_pins mem65536X32_0/address1]
-  connect_bd_net -net data_mem_ctrl_0_write_d_enable [get_bd_pins data_mem_ctrl_0/write_d_enable] [get_bd_pins mem4096X32_0/write_enable1]
-  connect_bd_net -net data_mem_ctrl_0_write_w_enable [get_bd_pins data_mem_ctrl_0/write_w_enable] [get_bd_pins mem65536X32_0/write_enable1]
-  connect_bd_net -net mem4096X32_0_data_out1 [get_bd_pins data_mem_ctrl_0/d_data_out] [get_bd_pins mem4096X32_0/data_out1]
-  connect_bd_net -net mem65536X32_0_data_out1 [get_bd_pins data_mem_ctrl_0/w_data_out] [get_bd_pins mem65536X32_0/data_out1]
-  connect_bd_net -net proc_sys_reset_0_peripheral_aresetn [get_bd_pins data_mem_ctrl_0/s00_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN]
-  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins data_mem_ctrl_0/s00_axi_aclk] [get_bd_pins mem4096X32_0/clk] [get_bd_pins mem65536X32_0/clk] [get_bd_pins proc_sys_reset_0/slowest_sync_clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK]
+  connect_bd_net -net data_mem_ctrl_0_interrupt [get_bd_pins data_mem_ctrl_0/interrupt] [get_bd_pins processing_system7_0/IRQ_F2P]
+  connect_bd_net -net proc_sys_reset_0_peripheral_aresetn [get_bd_pins data_mem_ctrl_0/s00_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins processor_ctrl_0/reset] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN]
+  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins data_mem_ctrl_0/s00_axi_aclk] [get_bd_pins proc_sys_reset_0/slowest_sync_clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processor_ctrl_0/clk] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins proc_sys_reset_0/ext_reset_in] [get_bd_pins processing_system7_0/FCLK_RESET0_N]
 
   # Create address segments

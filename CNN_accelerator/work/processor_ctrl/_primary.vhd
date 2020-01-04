@@ -28,8 +28,7 @@ entity processor_ctrl is
         weight_data     : out    vl_logic_vector(31 downto 0);
         feature_mem_en  : out    vl_logic;
         weight_mem_en   : out    vl_logic;
-        done            : out    vl_logic;
-        instruction_finish: out    vl_logic
+        done            : out    vl_logic
     );
     attribute mti_svvh_generic_type : integer;
     attribute mti_svvh_generic_type of idle : constant is 1;

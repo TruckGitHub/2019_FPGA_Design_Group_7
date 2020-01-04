@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Wed Dec 18 22:50:29 2019
+//Date        : Sun Jan  5 00:14:37 2020
 //Host        : LAPTOP-SOMQUB3A running 64-bit major release  (build 9200)
 //Command     : generate_target acceleraor_wrapper.bd
 //Design      : acceleraor_wrapper
