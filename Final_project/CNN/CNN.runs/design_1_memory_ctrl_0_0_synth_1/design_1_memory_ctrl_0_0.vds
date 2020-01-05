@@ -1,0 +1,383 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jan  6 00:41:05 2020
+# Process ID: 29172
+# Current directory: D:/FPGA/CNN/CNN.runs/design_1_memory_ctrl_0_0_synth_1
+# Command line: vivado.exe -log design_1_memory_ctrl_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_memory_ctrl_0_0.tcl
+# Log file: D:/FPGA/CNN/CNN.runs/design_1_memory_ctrl_0_0_synth_1/design_1_memory_ctrl_0_0.vds
+# Journal file: D:/FPGA/CNN/CNN.runs/design_1_memory_ctrl_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_memory_ctrl_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/software/Vivado/Vivado/2018.3/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 278.090 ; gain = 27.656
+Command: synth_design -top design_1_memory_ctrl_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24700 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 396.590 ; gain = 98.805
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_memory_ctrl_0_0' [d:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/ip/design_1_memory_ctrl_0_0/synth/design_1_memory_ctrl_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'memory_ctrl_v1_0' [d:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/ipshared/7cc3/hdl/memory_ctrl_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'memory_ctrl_v1_0_S00_AXI' [d:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/ipshared/7cc3/hdl/memory_ctrl_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'memory_ctrl' [d:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/ipshared/7cc3/src/feature_ctrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'memory_ctrl' (1#1) [d:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/ipshared/7cc3/src/feature_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'weight_memory_ctrl' [d:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/ipshared/7cc3/src/weight_ctrl.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'weight_memory_ctrl' (2#1) [d:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/ipshared/7cc3/src/weight_ctrl.v:2]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg8_reg was removed.  [d:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/ipshared/7cc3/hdl/memory_ctrl_v1_0_S00_AXI.v:246]
+INFO: [Synth 8-6155] done synthesizing module 'memory_ctrl_v1_0_S00_AXI' (3#1) [d:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/ipshared/7cc3/hdl/memory_ctrl_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'memory_ctrl_v1_0' (4#1) [d:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/ipshared/7cc3/hdl/memory_ctrl_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_memory_ctrl_0_0' (5#1) [d:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/ip/design_1_memory_ctrl_0_0/synth/design_1_memory_ctrl_0_0.v:57]
+WARNING: [Synth 8-3331] design weight_memory_ctrl has unconnected port cmd[7]
+WARNING: [Synth 8-3331] design weight_memory_ctrl has unconnected port cmd[6]
+WARNING: [Synth 8-3331] design weight_memory_ctrl has unconnected port cmd[5]
+WARNING: [Synth 8-3331] design weight_memory_ctrl has unconnected port cmd[4]
+WARNING: [Synth 8-3331] design weight_memory_ctrl has unconnected port cmd[3]
+WARNING: [Synth 8-3331] design weight_memory_ctrl has unconnected port cmd[2]
+WARNING: [Synth 8-3331] design memory_ctrl has unconnected port cmd[7]
+WARNING: [Synth 8-3331] design memory_ctrl has unconnected port cmd[6]
+WARNING: [Synth 8-3331] design memory_ctrl has unconnected port cmd[5]
+WARNING: [Synth 8-3331] design memory_ctrl has unconnected port cmd[4]
+WARNING: [Synth 8-3331] design memory_ctrl has unconnected port cmd[3]
+WARNING: [Synth 8-3331] design memory_ctrl has unconnected port cmd[2]
+WARNING: [Synth 8-3331] design memory_ctrl_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design memory_ctrl_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design memory_ctrl_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design memory_ctrl_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design memory_ctrl_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design memory_ctrl_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 452.633 ; gain = 154.848
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 452.633 ; gain = 154.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 452.633 ; gain = 154.848
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 779.824 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 779.824 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 782.477 ; gain = 2.652
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:35 . Memory (MB): peak = 782.477 ; gain = 484.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:35 . Memory (MB): peak = 782.477 ; gain = 484.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:35 . Memory (MB): peak = 782.477 ; gain = 484.691
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "write_enable" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "write_enable" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "pl_start" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 782.477 ; gain = 484.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 9     
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	  10 Input     32 Bit        Muxes := 8     
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module memory_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module weight_memory_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module memory_ctrl_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 9     
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	  10 Input     32 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "inst/memory_ctrl_v1_0_S00_AXI_inst/pl_start" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design weight_memory_ctrl has unconnected port cmd[7]
+WARNING: [Synth 8-3331] design weight_memory_ctrl has unconnected port cmd[6]
+WARNING: [Synth 8-3331] design weight_memory_ctrl has unconnected port cmd[5]
+WARNING: [Synth 8-3331] design weight_memory_ctrl has unconnected port cmd[4]
+WARNING: [Synth 8-3331] design weight_memory_ctrl has unconnected port cmd[3]
+WARNING: [Synth 8-3331] design weight_memory_ctrl has unconnected port cmd[2]
+WARNING: [Synth 8-3331] design memory_ctrl has unconnected port cmd[7]
+WARNING: [Synth 8-3331] design memory_ctrl has unconnected port cmd[6]
+WARNING: [Synth 8-3331] design memory_ctrl has unconnected port cmd[5]
+WARNING: [Synth 8-3331] design memory_ctrl has unconnected port cmd[4]
+WARNING: [Synth 8-3331] design memory_ctrl has unconnected port cmd[3]
+WARNING: [Synth 8-3331] design memory_ctrl has unconnected port cmd[2]
+WARNING: [Synth 8-3331] design design_1_memory_ctrl_0_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design design_1_memory_ctrl_0_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design design_1_memory_ctrl_0_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design design_1_memory_ctrl_0_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design design_1_memory_ctrl_0_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design design_1_memory_ctrl_0_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'inst/memory_ctrl_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/memory_ctrl_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/memory_ctrl_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/memory_ctrl_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/memory_ctrl_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/memory_ctrl_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:38 . Memory (MB): peak = 782.477 ; gain = 484.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 803.910 ; gain = 506.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 804.207 ; gain = 506.422
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:52 . Memory (MB): peak = 817.242 ; gain = 519.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:54 . Memory (MB): peak = 817.242 ; gain = 519.457
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:54 . Memory (MB): peak = 817.242 ; gain = 519.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:54 . Memory (MB): peak = 817.242 ; gain = 519.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:54 . Memory (MB): peak = 817.242 ; gain = 519.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:54 . Memory (MB): peak = 817.242 ; gain = 519.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:54 . Memory (MB): peak = 817.242 ; gain = 519.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     5|
+|2     |LUT2 |    10|
+|3     |LUT3 |    41|
+|4     |LUT4 |    29|
+|5     |LUT5 |    52|
+|6     |LUT6 |    44|
+|7     |FDCE |     8|
+|8     |FDRE |   215|
+|9     |FDSE |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+----------------------------------+-------------------------+------+
+|      |Instance                          |Module                   |Cells |
++------+----------------------------------+-------------------------+------+
+|1     |top                               |                         |   405|
+|2     |  inst                            |memory_ctrl_v1_0         |   405|
+|3     |    memory_ctrl_v1_0_S00_AXI_inst |memory_ctrl_v1_0_S00_AXI |   405|
+|4     |      data_mem_ctrl1              |memory_ctrl              |    31|
+|5     |      weight_mem_ctrl1            |weight_memory_ctrl       |    31|
++------+----------------------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:54 . Memory (MB): peak = 817.242 ; gain = 519.457
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:34 . Memory (MB): peak = 817.242 ; gain = 189.613
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:54 . Memory (MB): peak = 817.242 ; gain = 519.457
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 828.578 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:59 . Memory (MB): peak = 828.578 ; gain = 539.688
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 828.578 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/CNN/CNN.runs/design_1_memory_ctrl_0_0_synth_1/design_1_memory_ctrl_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_memory_ctrl_0_0, cache-ID = 53962603ed0b8290
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 828.578 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/CNN/CNN.runs/design_1_memory_ctrl_0_0_synth_1/design_1_memory_ctrl_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_memory_ctrl_0_0_utilization_synth.rpt -pb design_1_memory_ctrl_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jan  6 00:42:32 2020...

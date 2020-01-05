@@ -1,0 +1,1677 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jan  6 02:25:29 2020
+# Process ID: 31380
+# Current directory: D:/FPGA/CNN/CNN.runs/design_1_processor_ctrl_0_0_synth_1
+# Command line: vivado.exe -log design_1_processor_ctrl_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_processor_ctrl_0_0.tcl
+# Log file: D:/FPGA/CNN/CNN.runs/design_1_processor_ctrl_0_0_synth_1/design_1_processor_ctrl_0_0.vds
+# Journal file: D:/FPGA/CNN/CNN.runs/design_1_processor_ctrl_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_processor_ctrl_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/software/Vivado/Vivado/2018.3/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 279.113 ; gain = 23.883
+Command: synth_design -top design_1_processor_ctrl_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 46648 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 397.699 ; gain = 99.496
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_processor_ctrl_0_0' [d:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/ip/design_1_processor_ctrl_0_0/synth/design_1_processor_ctrl_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'processor_ctrl' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:1]
+	Parameter idle bound to: 0 - type: integer 
+	Parameter fetch bound to: 1 - type: integer 
+	Parameter decode bound to: 2 - type: integer 
+	Parameter load bound to: 3 - type: integer 
+	Parameter conv bound to: 4 - type: integer 
+	Parameter pooling bound to: 2 - type: integer 
+	Parameter fc bound to: 3 - type: integer 
+	Parameter write bound to: 7 - type: integer 
+	Parameter finish bound to: 8 - type: integer 
+	Parameter CONV1 bound to: 1 - type: integer 
+	Parameter POOLING bound to: 2 - type: integer 
+	Parameter FC bound to: 3 - type: integer 
+	Parameter END bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mac_processor' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mac_processor' (1#1) [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:1]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000000010 is unreachable [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:120]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000000011 is unreachable [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:120]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:276]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:306]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:315]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:364]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:515]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:515]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:515]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:515]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:515]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:515]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:683]
+INFO: [Synth 8-6155] done synthesizing module 'processor_ctrl' (2#1) [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processor_ctrl_0_0' (3#1) [d:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/ip/design_1_processor_ctrl_0_0/synth/design_1_processor_ctrl_0_0.v:58]
+WARNING: [Synth 8-3331] design mac_processor has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 455.492 ; gain = 157.289
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 455.492 ; gain = 157.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 455.492 ; gain = 157.289
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 824.391 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 824.391 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.242 . Memory (MB): peak = 830.660 ; gain = 6.270
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 830.660 ; gain = 532.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 830.660 ; gain = 532.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 830.660 ; gain = 532.457
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "data_buffer_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_buffer_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_buffer_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:364]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:276]
+INFO: [Synth 8-5546] ROM "feature_mem_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "instruction" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "x" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "load_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "feature_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "write_data_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "feature_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:488]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:490]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:669]
+INFO: [Synth 8-5546] ROM "feature_mem_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "instruction" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "x" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "load_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "weight_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "feature_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "write_data_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "feature_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 830.660 ; gain = 532.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	  26 Input     40 Bit       Adders := 6     
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     20 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 24    
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 6     
+	   2 Input      5 Bit       Adders := 12    
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 161   
+	               18 Bit    Registers := 151   
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 5     
+	                5 Bit    Registers := 13    
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 120   
+	                1 Bit    Registers := 5     
++---Multipliers : 
+	                 4x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 6     
+	   2 Input     20 Bit        Muxes := 131   
+	   2 Input     16 Bit        Muxes := 6     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 18    
+	   6 Input     12 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 2     
+	   7 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 25    
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   6 Input      2 Bit        Muxes := 1     
+	  26 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 222   
+	   3 Input      1 Bit        Muxes := 123   
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	  26 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mac_processor 
+Detailed RTL Component Info : 
++---Adders : 
+	  26 Input     40 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 26    
+	               18 Bit    Registers := 25    
+	                3 Bit    Registers := 20    
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 20    
+	   2 Input      1 Bit        Muxes := 31    
+	   3 Input      1 Bit        Muxes := 20    
+Module processor_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     20 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 24    
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 6     
+	   2 Input      5 Bit       Adders := 12    
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 5     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 5     
+	                5 Bit    Registers := 13    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Multipliers : 
+	                 4x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 11    
+	   2 Input     16 Bit        Muxes := 6     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 18    
+	   6 Input     12 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 2     
+	   7 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 25    
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   6 Input      2 Bit        Muxes := 1     
+	  26 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 36    
+	   3 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	  26 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[17][19:0]' into 'weight_buffer_reg[17][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[15][19:0]' into 'weight_buffer_reg[15][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[13][19:0]' into 'weight_buffer_reg[13][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[14][19:0]' into 'weight_buffer_reg[14][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[11][19:0]' into 'weight_buffer_reg[11][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[9][19:0]' into 'weight_buffer_reg[9][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[10][19:0]' into 'weight_buffer_reg[10][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[7][19:0]' into 'weight_buffer_reg[7][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[5][19:0]' into 'weight_buffer_reg[5][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[6][19:0]' into 'weight_buffer_reg[6][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[3][19:0]' into 'weight_buffer_reg[3][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[1][19:0]' into 'weight_buffer_reg[1][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[2][19:0]' into 'weight_buffer_reg[2][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[4][19:0]' into 'weight_buffer_reg[4][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[8][19:0]' into 'weight_buffer_reg[8][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[12][19:0]' into 'weight_buffer_reg[12][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[19][19:0]' into 'weight_buffer_reg[19][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[18][19:0]' into 'weight_buffer_reg[18][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[21][19:0]' into 'weight_buffer_reg[21][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[16][19:0]' into 'weight_buffer_reg[16][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[23][19:0]' into 'weight_buffer_reg[23][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[22][19:0]' into 'weight_buffer_reg[22][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[20][19:0]' into 'weight_buffer_reg[20][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[24][19:0]' into 'weight_buffer_reg[24][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[0][19:0]' into 'weight_buffer_reg[0][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[17] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[15] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[13] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[14] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[11] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[9] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[10] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[7] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[5] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[6] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[3] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[1] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[2] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[4] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[8] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[12] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[19] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[18] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[21] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[16] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[23] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[22] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[20] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer1, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer1.
+DSP Report: register weight_buffer_reg[24] is absorbed into DSP temp_answer1.
+DSP Report: operator temp_answer1 is absorbed into DSP temp_answer1.
+DSP Report: operator temp_answer1 is absorbed into DSP temp_answer1.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[0] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[17][19:0]' into 'weight_buffer_reg[17][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[15][19:0]' into 'weight_buffer_reg[15][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[13][19:0]' into 'weight_buffer_reg[13][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[14][19:0]' into 'weight_buffer_reg[14][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[11][19:0]' into 'weight_buffer_reg[11][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[9][19:0]' into 'weight_buffer_reg[9][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[10][19:0]' into 'weight_buffer_reg[10][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[7][19:0]' into 'weight_buffer_reg[7][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[5][19:0]' into 'weight_buffer_reg[5][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[6][19:0]' into 'weight_buffer_reg[6][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[3][19:0]' into 'weight_buffer_reg[3][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[1][19:0]' into 'weight_buffer_reg[1][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[2][19:0]' into 'weight_buffer_reg[2][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[4][19:0]' into 'weight_buffer_reg[4][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[8][19:0]' into 'weight_buffer_reg[8][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[12][19:0]' into 'weight_buffer_reg[12][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[19][19:0]' into 'weight_buffer_reg[19][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[18][19:0]' into 'weight_buffer_reg[18][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[21][19:0]' into 'weight_buffer_reg[21][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[16][19:0]' into 'weight_buffer_reg[16][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[23][19:0]' into 'weight_buffer_reg[23][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[22][19:0]' into 'weight_buffer_reg[22][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[20][19:0]' into 'weight_buffer_reg[20][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[24][19:0]' into 'weight_buffer_reg[24][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[0][19:0]' into 'weight_buffer_reg[0][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[17] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[15] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[13] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[14] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[11] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[9] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[10] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[7] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[5] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[6] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[3] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[1] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[2] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[4] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[8] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[12] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[19] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[18] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[21] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[16] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[23] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[22] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[20] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer1, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer1.
+DSP Report: register weight_buffer_reg[24] is absorbed into DSP temp_answer1.
+DSP Report: operator temp_answer1 is absorbed into DSP temp_answer1.
+DSP Report: operator temp_answer1 is absorbed into DSP temp_answer1.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[0] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[17][19:0]' into 'weight_buffer_reg[17][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[15][19:0]' into 'weight_buffer_reg[15][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[13][19:0]' into 'weight_buffer_reg[13][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[14][19:0]' into 'weight_buffer_reg[14][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[11][19:0]' into 'weight_buffer_reg[11][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[9][19:0]' into 'weight_buffer_reg[9][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[10][19:0]' into 'weight_buffer_reg[10][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[7][19:0]' into 'weight_buffer_reg[7][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[5][19:0]' into 'weight_buffer_reg[5][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[6][19:0]' into 'weight_buffer_reg[6][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[3][19:0]' into 'weight_buffer_reg[3][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[1][19:0]' into 'weight_buffer_reg[1][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[2][19:0]' into 'weight_buffer_reg[2][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[4][19:0]' into 'weight_buffer_reg[4][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[8][19:0]' into 'weight_buffer_reg[8][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[12][19:0]' into 'weight_buffer_reg[12][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[19][19:0]' into 'weight_buffer_reg[19][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[18][19:0]' into 'weight_buffer_reg[18][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[21][19:0]' into 'weight_buffer_reg[21][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[16][19:0]' into 'weight_buffer_reg[16][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[23][19:0]' into 'weight_buffer_reg[23][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[22][19:0]' into 'weight_buffer_reg[22][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[20][19:0]' into 'weight_buffer_reg[20][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[24][19:0]' into 'weight_buffer_reg[24][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[0][19:0]' into 'weight_buffer_reg[0][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[17] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[15] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[13] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[14] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[11] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[9] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[10] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[7] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[5] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[6] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[3] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[1] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[2] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[4] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[8] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[12] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[19] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[18] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[21] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[16] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[23] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[22] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[20] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer1, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer1.
+DSP Report: register weight_buffer_reg[24] is absorbed into DSP temp_answer1.
+DSP Report: operator temp_answer1 is absorbed into DSP temp_answer1.
+DSP Report: operator temp_answer1 is absorbed into DSP temp_answer1.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[0] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[17][19:0]' into 'weight_buffer_reg[17][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[15][19:0]' into 'weight_buffer_reg[15][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[13][19:0]' into 'weight_buffer_reg[13][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[14][19:0]' into 'weight_buffer_reg[14][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[11][19:0]' into 'weight_buffer_reg[11][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[9][19:0]' into 'weight_buffer_reg[9][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[10][19:0]' into 'weight_buffer_reg[10][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[7][19:0]' into 'weight_buffer_reg[7][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[5][19:0]' into 'weight_buffer_reg[5][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[6][19:0]' into 'weight_buffer_reg[6][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[3][19:0]' into 'weight_buffer_reg[3][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[1][19:0]' into 'weight_buffer_reg[1][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[2][19:0]' into 'weight_buffer_reg[2][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[4][19:0]' into 'weight_buffer_reg[4][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[8][19:0]' into 'weight_buffer_reg[8][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[12][19:0]' into 'weight_buffer_reg[12][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[19][19:0]' into 'weight_buffer_reg[19][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[18][19:0]' into 'weight_buffer_reg[18][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[21][19:0]' into 'weight_buffer_reg[21][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[16][19:0]' into 'weight_buffer_reg[16][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[23][19:0]' into 'weight_buffer_reg[23][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[22][19:0]' into 'weight_buffer_reg[22][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[20][19:0]' into 'weight_buffer_reg[20][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[24][19:0]' into 'weight_buffer_reg[24][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Synth 8-4471] merging register 'weight_buffer_reg[0][19:0]' into 'weight_buffer_reg[0][19:0]' [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/mac_processor.v:52]
+INFO: [Common 17-14] Message 'Synth 8-4471' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[17] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[15] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[13] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[14] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[11] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[9] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[10] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[7] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[5] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[6] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[3] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[1] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[2] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[4] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[8] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[12] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[19] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[18] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[21] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[16] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[23] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[22] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[20] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer1, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer1.
+DSP Report: register weight_buffer_reg[24] is absorbed into DSP temp_answer1.
+DSP Report: operator temp_answer1 is absorbed into DSP temp_answer1.
+DSP Report: operator temp_answer1 is absorbed into DSP temp_answer1.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[0] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[17] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[15] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[13] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[14] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[11] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[9] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[10] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[7] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[5] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[6] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[3] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[1] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[2] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[4] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[8] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[12] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[19] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[18] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[21] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[16] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[23] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[22] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[20] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer1, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer1.
+DSP Report: register weight_buffer_reg[24] is absorbed into DSP temp_answer1.
+DSP Report: operator temp_answer1 is absorbed into DSP temp_answer1.
+DSP Report: operator temp_answer1 is absorbed into DSP temp_answer1.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[0] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[17] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[15] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[13] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[14] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[11] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[9] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[10] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[7] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[5] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[6] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[3] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[1] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[2] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[4] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: Generating DSP temp_answer6, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer6.
+DSP Report: register weight_buffer_reg[8] is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: operator temp_answer6 is absorbed into DSP temp_answer6.
+DSP Report: Generating DSP temp_answer5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer5.
+DSP Report: register weight_buffer_reg[12] is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: operator temp_answer5 is absorbed into DSP temp_answer5.
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[19] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[18] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[21] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer4, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer4.
+DSP Report: register weight_buffer_reg[16] is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: operator temp_answer4 is absorbed into DSP temp_answer4.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[23] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[22] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer3.
+DSP Report: register weight_buffer_reg[20] is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: operator temp_answer3 is absorbed into DSP temp_answer3.
+DSP Report: Generating DSP temp_answer1, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer1.
+DSP Report: register weight_buffer_reg[24] is absorbed into DSP temp_answer1.
+DSP Report: operator temp_answer1 is absorbed into DSP temp_answer1.
+DSP Report: operator temp_answer1 is absorbed into DSP temp_answer1.
+DSP Report: Generating DSP temp_answer7, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP temp_answer7.
+DSP Report: register weight_buffer_reg[0] is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+DSP Report: operator temp_answer7 is absorbed into DSP temp_answer7.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:488]
+DSP Report: Generating DSP feature_size0, operation Mode is: (C or 0)+(0 or A*B).
+DSP Report: operator feature_size0 is absorbed into DSP feature_size0.
+DSP Report: Generating DSP instruction_finish5, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP instruction_finish5.
+DSP Report: register A is absorbed into DSP instruction_finish5.
+DSP Report: operator instruction_finish5 is absorbed into DSP instruction_finish5.
+DSP Report: operator instruction_finish5 is absorbed into DSP instruction_finish5.
+DSP Report: Generating DSP instruction_finish4, operation Mode is: A*B.
+DSP Report: operator instruction_finish4 is absorbed into DSP instruction_finish4.
+DSP Report: operator instruction_finish4 is absorbed into DSP instruction_finish4.
+DSP Report: Generating DSP instruction_finish4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator instruction_finish4 is absorbed into DSP instruction_finish4.
+DSP Report: operator instruction_finish4 is absorbed into DSP instruction_finish4.
+DSP Report: Generating DSP pooling_index0, operation Mode is: A*B.
+DSP Report: operator pooling_index0 is absorbed into DSP pooling_index0.
+DSP Report: Generating DSP feature_addr0, operation Mode is: C+A2*B2.
+DSP Report: register feature_size_reg is absorbed into DSP feature_addr0.
+DSP Report: register feature_size_reg is absorbed into DSP feature_addr0.
+DSP Report: operator feature_addr0 is absorbed into DSP feature_addr0.
+DSP Report: operator feature_addr1 is absorbed into DSP feature_addr0.
+DSP Report: Generating DSP fc_temp, operation Mode is: A*B.
+DSP Report: operator fc_temp is absorbed into DSP fc_temp.
+DSP Report: operator fc_temp is absorbed into DSP fc_temp.
+DSP Report: Generating DSP conv_index, operation Mode is: C+A*B.
+DSP Report: operator conv_index is absorbed into DSP conv_index.
+DSP Report: operator conv_index0 is absorbed into DSP conv_index.
+WARNING: [Synth 8-3331] design mac_processor has unconnected port reset
+INFO: [Synth 8-3886] merging instance 'inst/A[3]' (FDE) to 'inst/feature_size_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/A[4]' (FDE) to 'inst/feature_size_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/A[5]' (FDE) to 'inst/feature_size_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/A[6]' (FDE) to 'inst/feature_size_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/A[7]' (FDE) to 'inst/feature_size_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/A[8]' (FDE) to 'inst/feature_size_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/A[9]' (FDE) to 'inst/feature_size_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/A[10]' (FDE) to 'inst/feature_size_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/A[11]' (FDE) to 'inst/feature_size_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/A[14]' (FDE) to 'inst/feature_size_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/A[15]' (FDE) to 'inst/feature_size_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/A[16]' (FDE) to 'inst/feature_size_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/A[17]' (FDE) to 'inst/feature_size_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/A[18]' (FDE) to 'inst/feature_size_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/A[19]' (FDE) to 'inst/feature_size_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/A[13]' (FDE) to 'inst/feature_size_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/A[12]' (FDE) to 'inst/feature_size_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/feature_size_reg[0]' (FDE) to 'inst/A[0]'
+INFO: [Synth 8-3886] merging instance 'inst/A[1]' (FDE) to 'inst/feature_size_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/B[1]' (FDE) to 'inst/feature_size_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/B[2]' (FDE) to 'inst/feature_size_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/A[2]' (FDE) to 'inst/feature_size_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/B[0]' (FDE) to 'inst/feature_size_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/feature_size_reg[13]' (FDE) to 'inst/feature_size_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/feature_size_reg[14]' (FDE) to 'inst/feature_size_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/feature_size_reg[15]' (FDE) to 'inst/feature_size_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/feature_size_reg[16]' (FDE) to 'inst/feature_size_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/feature_size_reg[17]' (FDE) to 'inst/feature_size_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/feature_size_reg[18]' (FDE) to 'inst/feature_size_reg[19]'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[16][17]' (FDE) to 'mac_processor:/B[0]__14'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[16][18]' (FDE) to 'mac_processor:/B[1]__14'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[16][19]' (FDE) to 'mac_processor:/B[2]__14'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[18][17]' (FDE) to 'mac_processor:/B[0]__12'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[18][18]' (FDE) to 'mac_processor:/B[1]__12'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[18][19]' (FDE) to 'mac_processor:/B[2]__12'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[1][17]' (FDE) to 'mac_processor:/B[0]__8'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[1][18]' (FDE) to 'mac_processor:/B[1]__8'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[1][19]' (FDE) to 'mac_processor:/B[2]__8'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[21][17]' (FDE) to 'mac_processor:/B[0]__13'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[21][18]' (FDE) to 'mac_processor:/B[1]__13'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[21][19]' (FDE) to 'mac_processor:/B[2]__13'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[23][17]' (FDE) to 'mac_processor:/B[0]__15'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[23][18]' (FDE) to 'mac_processor:/B[1]__15'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[23][19]' (FDE) to 'mac_processor:/B[2]__15'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[17][17]' (FDE) to 'mac_processor:/B[0]'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[17][18]' (FDE) to 'mac_processor:/B[1]'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[17][19]' (FDE) to 'mac_processor:/B[2]'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[22][17]' (FDE) to 'mac_processor:/B[0]__16'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[22][18]' (FDE) to 'mac_processor:/B[1]__16'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[22][19]' (FDE) to 'mac_processor:/B[2]__16'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[13][17]' (FDE) to 'mac_processor:/B[0]__1'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[13][18]' (FDE) to 'mac_processor:/B[1]__1'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[13][19]' (FDE) to 'mac_processor:/B[2]__1'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[3][17]' (FDE) to 'mac_processor:/B[0]__7'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[3][18]' (FDE) to 'mac_processor:/B[1]__7'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[3][19]' (FDE) to 'mac_processor:/B[2]__7'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[2][17]' (FDE) to 'mac_processor:/B[0]__9'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[2][18]' (FDE) to 'mac_processor:/B[1]__9'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[2][19]' (FDE) to 'mac_processor:/B[2]__9'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[7][17]' (FDE) to 'mac_processor:/B[0]__4'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[7][18]' (FDE) to 'mac_processor:/B[1]__4'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[7][19]' (FDE) to 'mac_processor:/B[2]__4'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[6][17]' (FDE) to 'mac_processor:/B[0]__6'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[6][18]' (FDE) to 'mac_processor:/B[1]__6'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[6][19]' (FDE) to 'mac_processor:/B[2]__6'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[8][17]' (FDE) to 'mac_processor:/B[0]__10'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[8][18]' (FDE) to 'mac_processor:/B[1]__10'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[8][19]' (FDE) to 'mac_processor:/B[2]__10'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[11][17]' (FDE) to 'mac_processor:/B[0]__2'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[11][18]' (FDE) to 'mac_processor:/B[1]__2'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[11][19]' (FDE) to 'mac_processor:/B[2]__2'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[12][17]' (FDE) to 'mac_processor:/B[0]__11'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[12][18]' (FDE) to 'mac_processor:/B[1]__11'
+INFO: [Synth 8-3886] merging instance 'mac_processor:/data_buffer_reg[12][19]' (FDE) to 'mac_processor:/B[2]__11'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/state_reg[4] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 848.746 ; gain = 550.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++---------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping         | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mac_processor  | A2*B2               | 20     | 18     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|processor_ctrl | (C or 0)+(0 or A*B) | 8      | 5      | 9      | -      | 13     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|processor_ctrl | A2*B2               | 21     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|processor_ctrl | A*B                 | 18     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|processor_ctrl | (PCIN>>17)+A*B      | 16     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|processor_ctrl | A*B                 | 12     | 10     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|processor_ctrl | C+A2*B2             | 12     | 12     | 12     | -      | 12     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|processor_ctrl | A*B                 | 20     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|processor_ctrl | C+A*B               | 12     | 7      | 12     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++---------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:162]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:162]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:162]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:162]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:162]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:212]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:162]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:353]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:212]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:162]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:211]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:18 ; elapsed = 00:01:22 . Memory (MB): peak = 939.102 ; gain = 640.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 977.703 ; gain = 679.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:162]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:162]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:162]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:162]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:162]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:212]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:162]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:353]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:212]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:162]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/FPGA/FPGA/ip_repo/processor_ctrl/processor_ctrl.srcs/sources_1/imports/CNN_hdl/processing_element.v:211]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:36 ; elapsed = 00:01:39 . Memory (MB): peak = 1068.258 ; gain = 770.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:40 ; elapsed = 00:01:43 . Memory (MB): peak = 1068.258 ; gain = 770.055
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:40 ; elapsed = 00:01:44 . Memory (MB): peak = 1068.258 ; gain = 770.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:44 ; elapsed = 00:01:48 . Memory (MB): peak = 1068.258 ; gain = 770.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:44 ; elapsed = 00:01:48 . Memory (MB): peak = 1068.258 ; gain = 770.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:45 ; elapsed = 00:01:48 . Memory (MB): peak = 1068.258 ; gain = 770.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:45 ; elapsed = 00:01:48 . Memory (MB): peak = 1068.258 ; gain = 770.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |  2750|
+|2     |DSP48E1   |   151|
+|3     |DSP48E1_1 |     2|
+|4     |DSP48E1_2 |     4|
+|5     |DSP48E1_3 |     1|
+|6     |LUT1      |   256|
+|7     |LUT2      |  6550|
+|8     |LUT3      |  5175|
+|9     |LUT4      |  3022|
+|10    |LUT5      |   974|
+|11    |LUT6      |  6391|
+|12    |MUXF7     |    30|
+|13    |MUXF8     |    10|
+|14    |FDCE      |   247|
+|15    |FDPE      |    18|
+|16    |FDRE      |  5670|
+|17    |FDSE      |     6|
++------+----------+------+
+
+Report Instance Areas: 
++------+----------+----------------+------+
+|      |Instance  |Module          |Cells |
++------+----------+----------------+------+
+|1     |top       |                | 31257|
+|2     |  inst    |processor_ctrl  | 30135|
+|3     |    mac_0 |mac_processor   |  4647|
+|4     |    mac_1 |mac_processor_0 |  4634|
+|5     |    mac_2 |mac_processor_1 |  4630|
+|6     |    mac_3 |mac_processor_2 |  4632|
+|7     |    mac_4 |mac_processor_3 |  4635|
+|8     |    mac_5 |mac_processor_4 |  4673|
++------+----------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:45 ; elapsed = 00:01:48 . Memory (MB): peak = 1068.258 ; gain = 770.055
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:33 ; elapsed = 00:01:40 . Memory (MB): peak = 1068.258 ; gain = 394.887
+Synthesis Optimization Complete : Time (s): cpu = 00:01:45 ; elapsed = 00:01:49 . Memory (MB): peak = 1068.258 ; gain = 770.055
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2948 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1068.258 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+336 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:54 ; elapsed = 00:01:58 . Memory (MB): peak = 1068.258 ; gain = 778.254
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1068.258 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/CNN/CNN.runs/design_1_processor_ctrl_0_0_synth_1/design_1_processor_ctrl_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1068.258 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_processor_ctrl_0_0, cache-ID = 0cb6fd9200d6b6a6
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1068.258 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/CNN/CNN.runs/design_1_processor_ctrl_0_0_synth_1/design_1_processor_ctrl_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1068.258 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file design_1_processor_ctrl_0_0_utilization_synth.rpt -pb design_1_processor_ctrl_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jan  6 02:28:12 2020...

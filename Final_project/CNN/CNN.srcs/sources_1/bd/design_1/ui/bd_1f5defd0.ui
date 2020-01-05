@@ -1,0 +1,47 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 530 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 550 -defaultsOSRD
+preplace inst mem4096X32_0 -pg 1 -lvl 3 -y 300 -defaultsOSRD
+preplace inst memory_ctrl_0 -pg 1 -lvl 4 -y 410 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -y 550 -defaultsOSRD
+preplace inst mem16384X32_0 -pg 1 -lvl 1 -y 150 -defaultsOSRD
+preplace inst processor_ctrl_0 -pg 1 -lvl 2 -y 270 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -y 670 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -y 580 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 2 3 NJ 530 NJ 530 NJ
+preplace netloc processor_ctrl_0_weight_mem_en 1 0 3 30 410 NJ 410 820
+preplace netloc processor_ctrl_0_weight_addr 1 0 3 50 390 NJ 390 840
+preplace netloc memory_ctrl_0_w_address 1 0 5 50 30 NJ 30 NJ 30 NJ 30 1600
+preplace netloc processor_ctrl_0_weight_data 1 0 3 40 400 NJ 400 830
+preplace netloc memory_ctrl_0_write_d_enable 1 2 3 890 160 NJ 160 1590
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 900
+preplace netloc processor_ctrl_0_feature_mem_en 1 2 1 860
+preplace netloc memory_ctrl_0_data_in_to_w_mem 1 0 5 40 20 NJ 20 NJ 20 NJ 20 1620
+preplace netloc memory_ctrl_0_write_w_enable 1 0 5 30 10 NJ 10 NJ 10 NJ 10 1630
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 3 50 450 NJ 450 820
+preplace netloc processor_ctrl_0_done 1 2 2 860 430 1250J
+preplace netloc processor_ctrl_0_feature_data 1 2 1 870
+preplace netloc processor_ctrl_0_feature_addr 1 2 1 880
+preplace netloc mem4096X32_0_data_out1 1 3 1 1220
+preplace netloc memory_ctrl_0_data_in_to_d_mem 1 2 3 900 170 NJ 170 1580
+preplace netloc mem4096X32_0_data_out2 1 1 3 420 420 NJ 420 1210
+preplace netloc memory_ctrl_0_pl_start 1 1 4 420 150 NJ 150 NJ 150 1610
+preplace netloc processing_system7_0_FIXED_IO 1 2 3 NJ 550 NJ 550 NJ
+preplace netloc memory_ctrl_0_d_address 1 2 3 910 180 NJ 180 1570
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 3 410 440 830 460 NJ
+preplace netloc mem16384X32_0_data_out1 1 1 3 NJ 140 NJ 140 1230
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 20 270 400 430 850 440 NJ
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 1 1240
+preplace netloc mem16384X32_0_data_out2 1 1 1 390
+levelinfo -pg 1 0 220 620 1060 1410 1650 -top 0 -bot 790
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_board_cnt":"1",
+   "da_clkrst_cnt":"4",
+   "da_ps7_cnt":"1"
+}

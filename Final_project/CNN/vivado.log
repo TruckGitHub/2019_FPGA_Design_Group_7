@@ -1,0 +1,214 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jan  5 01:50:12 2020
+# Process ID: 39876
+# Current directory: D:/FPGA/CNN
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27796 D:\FPGA\CNN\CNN.xpr
+# Log file: D:/FPGA/CNN/vivado.log
+# Journal file: D:/FPGA/CNN\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/FPGA/CNN/CNN.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/software/Vivado/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'design_1_processor_ctrl_0_0' generated file not found 'd:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/ip/design_1_processor_ctrl_0_0/design_1_processor_ctrl_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_processor_ctrl_0_0' generated file not found 'd:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/ip/design_1_processor_ctrl_0_0/design_1_processor_ctrl_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_processor_ctrl_0_0' generated file not found 'd:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/ip/design_1_processor_ctrl_0_0/design_1_processor_ctrl_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_processor_ctrl_0_0' generated file not found 'd:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/ip/design_1_processor_ctrl_0_0/design_1_processor_ctrl_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_processor_ctrl_0_0' generated file not found 'd:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/ip/design_1_processor_ctrl_0_0/design_1_processor_ctrl_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 736.023 ; gain = 162.035
+update_compile_order -fileset sources_1
+open_bd_design {D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:user:memory_ctrl:1.0 - memory_ctrl_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:user:mem65536X32:1.0 - mem65536X32_0
+Adding cell -- xilinx.com:user:mem4096X32:1.0 - mem4096X32_0
+Adding cell -- xilinx.com:user:processor_ctrl:1.0 - processor_ctrl_0
+Successfully read diagram <design_1> from BD file <D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 851.793 ; gain = 30.891
+reset_run design_1_processor_ctrl_0_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Jan  5 01:51:21 2020] Launched design_1_processor_ctrl_0_0_synth_1...
+Run output will be captured here: D:/FPGA/CNN/CNN.runs/design_1_processor_ctrl_0_0_synth_1/runme.log
+[Sun Jan  5 01:51:21 2020] Launched synth_1...
+Run output will be captured here: D:/FPGA/CNN/CNN.runs/synth_1/runme.log
+create_project process_ctrl D:/FPGA/ip_repo/process_ctrl -part xc7z020clg400-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/software/Vivado/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 914.266 ; gain = 7.414
+set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
+add_files -norecurse {D:/FPGA/CNN_accelerator/processing_element.v D:/FPGA/CNN_accelerator/mac_processor.v}
+import_files -force -norecurse
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir d:/fpga/ip_repo/process_ctrl/process_ctrl.srcs/sources_1/imports/cnn_accelerator -vendor xilinx.com -library user -taxonomy /UserIP
+WARNING: [IP_Flow 19-4300] HDL parameter 'pooling' has its value changed from '5' to '2'.
+WARNING: [IP_Flow 19-4300] HDL parameter 'fc' has its value changed from '6' to '3'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  d:/fpga/ip_repo/process_ctrl/process_ctrl.srcs/sources_1/imports/cnn_accelerator [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/fpga/ip_repo/process_ctrl/process_ctrl.srcs/sources_1/imports/cnn_accelerator'.
+current_project CNN
+open_bd_design {D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets mem65536X32_0_data_out2] [get_bd_nets processor_ctrl_0_feature_data] [get_bd_nets processor_ctrl_0_weight_mem_en] [get_bd_nets processor_ctrl_0_done] [get_bd_nets memory_ctrl_0_pl_start] [get_bd_nets mem4096X32_0_data_out2] [get_bd_nets processor_ctrl_0_feature_addr] [get_bd_nets processor_ctrl_0_weight_addr] [get_bd_nets processor_ctrl_0_weight_data] [get_bd_nets processor_ctrl_0_feature_mem_en] [get_bd_cells processor_ctrl_0]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA/ip_repo'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:process_ctrl:1.0 process_ctrl_0
+endgroup
+set_property location {3 824 279} [get_bd_cells process_ctrl_0]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_pins process_ctrl_0/clk]
+connect_bd_net [get_bd_pins process_ctrl_0/start] [get_bd_pins memory_ctrl_0/pl_start]
+connect_bd_net [get_bd_pins mem4096X32_0/data_out2] [get_bd_pins process_ctrl_0/feature_idata]
+connect_bd_net [get_bd_pins mem65536X32_0/data_out2] [get_bd_pins process_ctrl_0/weight_idata]
+connect_bd_net [get_bd_pins process_ctrl_0/weight_mem_en] [get_bd_pins mem65536X32_0/write_enable2]
+connect_bd_net [get_bd_pins process_ctrl_0/feature_mem_en] [get_bd_pins mem4096X32_0/write_enable2]
+connect_bd_net [get_bd_pins process_ctrl_0/weight_data] [get_bd_pins mem65536X32_0/data_in2]
+connect_bd_net [get_bd_pins process_ctrl_0/weight_addr] [get_bd_pins mem65536X32_0/address2]
+connect_bd_net [get_bd_pins process_ctrl_0/feature_data] [get_bd_pins mem4096X32_0/data_in2]
+connect_bd_net [get_bd_pins process_ctrl_0/feature_addr] [get_bd_pins mem4096X32_0/address2]
+connect_bd_net [get_bd_pins process_ctrl_0/done] [get_bd_pins memory_ctrl_0/pl_done]
+make_wrapper -files [get_files D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/design_1.bd] -top
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-927] Following properties on pin /mem65536X32_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /mem4096X32_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /process_ctrl_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+Wrote  : <D:\FPGA\CNN\CNN.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block memory_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mem4096X32_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mem65536X32_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block process_ctrl_0 .
+Exporting to file D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 68168676865e6a57; cache size = 2.926 MB.
+[Sun Jan  5 02:01:04 2020] Launched design_1_process_ctrl_0_0_synth_1...
+Run output will be captured here: D:/FPGA/CNN/CNN.runs/design_1_process_ctrl_0_0_synth_1/runme.log
+[Sun Jan  5 02:01:04 2020] Launched synth_1...
+Run output will be captured here: D:/FPGA/CNN/CNN.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1190.375 ; gain = 38.914
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Jan  5 02:15:57 2020] Launched impl_1...
+Run output will be captured here: D:/FPGA/CNN/CNN.runs/impl_1/runme.log
+current_project process_ctrl
+open_project D:/FPGA/ip_repo/mem65536/mem65536.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA/ip_repo/memory_ctrl_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA/ip_repo/mem65536/mem65536.srcs/sources_1/imports/cnn_accelerator'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/software/Vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1463.836 ; gain = 21.434
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file D:/FPGA/ip_repo/mem65536/mem65536.srcs/sources_1/imports/cnn_accelerator/component.xml
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path d:/FPGA/ip_repo/mem65536/mem65536.srcs/sources_1/imports/cnn_accelerator
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/FPGA/ip_repo/mem65536/mem65536.srcs/sources_1/imports/cnn_accelerator'
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path d:/FPGA/ip_repo/mem65536/mem65536.srcs/sources_1/imports/cnn_accelerator
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/FPGA/ip_repo/mem65536/mem65536.srcs/sources_1/imports/cnn_accelerator'
+current_project CNN
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA/ip_repo'.
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:mem65536X32:1.0 [get_ips  design_1_mem65536X32_0_0] -log ip_upgrade.log
+Upgrading 'D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_mem65536X32_0_0 (mem65536X32_v1_0 1.0) from revision 2 to revision 4
+Wrote  : <D:\FPGA\CNN\CNN.srcs\sources_1\bd\design_1\design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/FPGA/CNN/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_mem65536X32_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+make_wrapper -files [get_files D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/design_1.bd] -top
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-927] Following properties on pin /mem4096X32_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /process_ctrl_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /mem65536X32_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+Wrote  : <D:\FPGA\CNN\CNN.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+report_ip_status -name ip_status 
+current_project mem65536
+current_project CNN
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block memory_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mem4096X32_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mem65536X32_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block process_ctrl_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File D:/FPGA/CNN/CNN.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 68168676865e6a57; cache size = 191.362 MB.
+[Sun Jan  5 02:40:51 2020] Launched design_1_mem65536X32_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_mem65536X32_0_0_synth_1: D:/FPGA/CNN/CNN.runs/design_1_mem65536X32_0_0_synth_1/runme.log
+synth_1: D:/FPGA/CNN/CNN.runs/synth_1/runme.log
+[Sun Jan  5 02:40:52 2020] Launched impl_1...
+Run output will be captured here: D:/FPGA/CNN/CNN.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1574.875 ; gain = 36.215
+current_project process_ctrl
+launch_runs synth_1 -jobs 4
+[Sun Jan  5 03:00:16 2020] Launched synth_1...
+Run output will be captured here: D:/FPGA/ip_repo/process_ctrl/process_ctrl.runs/synth_1/runme.log
+current_project mem65536
+close_project
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jan  5 03:23:31 2020...
