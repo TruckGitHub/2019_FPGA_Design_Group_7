@@ -13,7 +13,7 @@ module  processor_ctrl(
 	output	reg		feature_mem_en,
 	output			weight_mem_en,
 	output	reg		done
-	//output	reg		instruction_finish
+
 	);
 	
 	reg [4:0]	state , next_state;
@@ -354,13 +354,13 @@ always@(posedge clk or posedge reset )begin
 	else if(state == fetch && temp_count == 0)
 		feature_addr <= program_counter;	
 	else if(state == write && operation == CONV1)begin
-		if(write_count>0)		//寫值
+		if(write_count>0)		
 			feature_addr <= feature_addr + (feature_size * feature_size);
 	end
 	else if(state == load  && operation == CONV1 && load_count == 0)
 		feature_addr <= conv_count;
 		
-	else if(state == load  && operation == POOLING  )begin   //讀值
+	else if(state == load  && operation == POOLING  )begin   
 		case(load_count)
 			0:	feature_addr <= pooling_index ;
 			1:	feature_addr <= feature_addr + 1;
