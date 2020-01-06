@@ -55,10 +55,10 @@ FPGA-based General Convolutional Neural Network accelerator
 ![](https://i.imgur.com/CHycxd3.png)
 
 
->### Weight BRAM(存Input_img、conv Weight&bias、FC Weight)資料位址示意圖
+>### Weight BRAM(存Input_img、conv Weight&bias、FC Weight)資料位址及存放順序示意圖
 >![](https://i.imgur.com/p7CFpmj.png)
 
->### Feature BRAM(存Feature Map、Instruction)資料位址示意圖
+>### Feature BRAM(存Feature Map、Instruction)資料位址及存放順序示意圖
 >![](https://i.imgur.com/jlgKzbC.png)
 
 >### MAC Processor
