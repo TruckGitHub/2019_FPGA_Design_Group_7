@@ -16,7 +16,7 @@ FPGA-based General Convolutional Neural Network accelerator
 >
 >4.   電路讀取Instruction並執行相對應的運算，將答案傳回BRAM
 >
->>:::warning  
+>>
 >>**Instruction set**
 >>
 >>![](https://i.imgur.com/YzH8t2z.png)
@@ -55,10 +55,10 @@ FPGA-based General Convolutional Neural Network accelerator
 ![](https://i.imgur.com/CHycxd3.png)
 
 
->### Weight BRAM(存Input_img、conv Weight&bias、FC Weight)資料位址示意圖
+>### Weight BRAM(存Input_img、conv Weight&bias、FC Weight)資料位址及存放順序示意圖
 >![](https://i.imgur.com/p7CFpmj.png)
 
->### Feature BRAM(存Feature Map、Instruction)資料位址示意圖
+>### Feature BRAM(存Feature Map、Instruction)資料位址及存放順序示意圖
 >![](https://i.imgur.com/jlgKzbC.png)
 
 >### MAC Processor
@@ -111,6 +111,6 @@ FPGA-based General Convolutional Neural Network accelerator
 ## FPGA Verification
 !!!FAILED!!!
 
-Critical path太長，不合timimg
+Critical path太長，不合timimg，
 可以透過調整頻率解決
 ![](https://i.imgur.com/YbcpfN4.png)
